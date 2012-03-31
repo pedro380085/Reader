@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>files</key>
+	<dict>
+		<key>ABO@72.png</key>
+		<data>
+		/h0RS0cDhKJNy9WlklwqyFbnt9g=
+		</data>
+		<key>CustomCell.nib</key>
+		<data>
+		Vk6gBInf+cjV9CFYuxqeG9rr6Ho=
+		</data>
+		<key>DetailView.nib</key>
+		<data>
+		oVcP1pTFvXJdji0t4s01L+HATe4=
+		</data>
+		<key>MainWindow.nib</key>
+		<data>
+		I4PG0lyMUQXMBioHhEu9Jhr+1nA=
+		</data>
+		<key>PDFView.nib</key>
+		<data>
+		9p6Ia8v/4YxDfO+go1RMPgOLf0A=
+		</data>
+		<key>PkgInfo</key>
+		<data>
+		n57qDP4tZfLD1rCS43W0B4LQjzE=
+		</data>
+		<key>button blue.png</key>
+		<data>
+		P2hDXUYCv9Rwytio/5noh31zvhU=
+		</data>
+		<key>button red.png</key>
+		<data>
+		yd7KK0oA71LgjTzSgH4zMBzVQ5A=
+		</data>
+		<key>embedded.mobileprovision</key>
+		<data>
+		e6f2pRljrXPMMPwXbtx3JYTwQPw=
+		</data>
+		<key>icon blue add.png</key>
+		<data>
+		wSTL35gDq5orL/XnfNu68nozarw=
+		</data>
+		<key>icon red remove.png</key>
+		<data>
+		rDSSwIIdtfrvycdvJ7y3JODX5Jo=
+		</data>
+	</dict>
+	<key>rules</key>
+	<dict>
+		<key>.*</key>
+		<true/>
+		<key>Info.plist</key>
+		<dict>
+			<key>omit</key>
+			<true/>
+			<key>weight</key>
+			<real>10</real>
+		</dict>
+		<key>ResourceRules.plist</key>
+		<dict>
+			<key>omit</key>
+			<true/>
+			<key>weight</key>
+			<real>100</real>
+		</dict>
+	</dict>
+</dict>
+</plist>

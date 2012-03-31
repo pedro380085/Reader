@@ -1,0 +1,3 @@
+/Users/pedro/Documents/Objective-C/Reader/Classes/CacheController.m: In function '-[CacheController atualizarCache]':
+/Users/pedro/Documents/Objective-C/Reader/Classes/CacheController.m:18: error: request for member 'porcentagem' in something not a structure or union
+/Users/pedro/Documents/Objective-C/Reader/Classes/CacheController.m:19: error: request for member 'detailDescriptionLabel' in something not a structure or union

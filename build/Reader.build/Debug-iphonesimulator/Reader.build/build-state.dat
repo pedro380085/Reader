@@ -1,0 +1,742 @@
+TReader
+v7
+r0
+t324183741.107885
+cCheck dependencies
+cProcessInfoPlistFile /Users/pedro/Documents/Objective-C/Reader/build/Debug-iphonesimulator/Reader.app/Info.plist Reader-Info.plist
+cCompileXIB /Users/pedro/Documents/Objective-C/Reader/MainWindow.xib
+cCompileXIB /Users/pedro/Documents/Objective-C/Reader/DetailView.xib
+cCpResource build/Debug-iphonesimulator/Reader.app/ABO@72.png ABO@72.png
+cCompileXIB /Users/pedro/Documents/Objective-C/Reader/Classes/CustomCell.xib
+cCpResource "build/Debug-iphonesimulator/Reader.app/button blue.png" "button blue.png"
+cCpResource "build/Debug-iphonesimulator/Reader.app/icon blue add.png" "icon blue add.png"
+cCpResource "build/Debug-iphonesimulator/Reader.app/button red.png" "button red.png"
+cCpResource "build/Debug-iphonesimulator/Reader.app/icon red remove.png" "icon red remove.png"
+cProcessPCH /var/folders/q5/q5yrAwxFHKObSRQfGpAGAk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Reader_Prefix-hfqvllczlhoxfibxvnjcgalfcnry/Reader_Prefix.pch.gch Reader_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Reader.build/Debug-iphonesimulator/Reader.build/Objects-normal/i386/main.o /Users/pedro/Documents/Objective-C/Reader/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Reader.build/Debug-iphonesimulator/Reader.build/Objects-normal/i386/ReaderAppDelegate.o /Users/pedro/Documents/Objective-C/Reader/Classes/ReaderAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Reader.build/Debug-iphonesimulator/Reader.build/Objects-normal/i386/RootViewController.o /Users/pedro/Documents/Objective-C/Reader/Classes/RootViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Reader.build/Debug-iphonesimulator/Reader.build/Objects-normal/i386/DetailViewController.o /Users/pedro/Documents/Objective-C/Reader/Classes/DetailViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Reader.build/Debug-iphonesimulator/Reader.build/Objects-normal/i386/CustomCell.o /Users/pedro/Documents/Objective-C/Reader/Classes/CustomCell.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Reader.build/Debug-iphonesimulator/Reader.build/Objects-normal/i386/PDFScrollView.o /Users/pedro/Documents/Objective-C/Reader/Classes/PDFScrollView.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Reader.build/Debug-iphonesimulator/Reader.build/Objects-normal/i386/TiledPDFView.o /Users/pedro/Documents/Objective-C/Reader/Classes/TiledPDFView.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cLd /Users/pedro/Documents/Objective-C/Reader/build/Debug-iphonesimulator/Reader.app/Reader normal i386
+cGenerateDSYMFile /Users/pedro/Documents/Objective-C/Reader/build/Debug-iphonesimulator/Reader.app.dSYM /Users/pedro/Documents/Objective-C/Reader/build/Debug-iphonesimulator/Reader.app/Reader
+cTouch /Users/pedro/Documents/Objective-C/Reader/build/Debug-iphonesimulator/Reader.app
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk
+c000000004CC128950000000000000110
+t1287727253
+s272
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004CC12246000000000029B310
+t1287725638
+s2732816
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004CC1226D000000000029D5D0
+t1287725677
+s2741712
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004CC1225F0000000000001466
+t1287725663
+s5222
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.h
+c000000004CC1233C00000000000000C4
+t1287725884
+s196
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/QuartzCore.framework/QuartzCore
+c000000004CC12431000000000015CDB0
+t1287726129
+s1428912
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004CC1281F0000000000000AA1
+t1287727135
+s2721
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004CC12883000000000074D7B0
+t1287727235
+s7657392
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/usr/include/Availability.h
+c000000004CB3FA080000000000001ADD
+t1286863368
+s6877
+
+N/Developer4.2/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk
+c000000004CC128950000000000000110
+t1287727253
+s272
+
+N/Developer4.2/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004CC12246000000000029B310
+t1287725638
+s2732816
+
+N/Developer4.2/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004CC1226D000000000029D5D0
+t1287725677
+s2741712
+
+N/Developer4.2/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004CC1225F0000000000001466
+t1287725663
+s5222
+
+N/Developer4.2/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004CC1281F0000000000000AA1
+t1287727135
+s2721
+
+N/Developer4.2/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004CC12883000000000074D7B0
+t1287727235
+s7657392
+
+N/Developer4.2/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/usr/include/Availability.h
+c000000004CB3FA080000000000001ADD
+t1286863368
+s6877
+
+N/Users/pedro/Documents/Objective-C/Reader/ABO@72.png
+c000000004D7F364A0000000000001662
+t1300182602
+s5730
+
+N/Users/pedro/Documents/Objective-C/Reader/Classes/CacheController.h
+c00000000000000000000000000000000
+t2
+s0
+i<Foundation/Foundation.h>
+
+N/Users/pedro/Documents/Objective-C/Reader/Classes/CacheController.m
+c000000004D756CC70000000000000182
+t1299541191
+s386
+i"CacheController.h"
+i"DetailViewController.h"
+
+N/Users/pedro/Documents/Objective-C/Reader/Classes/CustomCell.h
+c000000004D8B487300000000000004A5
+t1300973683
+s1189
+i<UIKit/UIKit.h>
+
+N/Users/pedro/Documents/Objective-C/Reader/Classes/CustomCell.m
+c000000004D903B8F000000000000124C
+t1301298063
+s4684
+i"CustomCell.h"
+i"RootViewController.h"
+i"ReaderAppDelegate.h"
+
+N/Users/pedro/Documents/Objective-C/Reader/Classes/CustomCell.xib
+c000000004D8B1C36000000000000A8BE
+t1300962358
+s43198
+
+N/Users/pedro/Documents/Objective-C/Reader/Classes/DetailViewController.h
+c000000004D9EFF0E000000000000072A
+t1302265614
+s1834
+i<UIKit/UIKit.h>
+
+N/Users/pedro/Documents/Objective-C/Reader/Classes/DetailViewController.m
+c000000004D9EFF1A0000000000002C65
+t1302265626
+s11365
+i"DetailViewController.h"
+i"RootViewController.h"
+i"PDFScrollView.h"
+
+N/Users/pedro/Documents/Objective-C/Reader/Classes/DownloadController.h
+c000000004D74062000000000000001E1
+t1299449376
+s481
+i<Foundation/Foundation.h>
+
+N/Users/pedro/Documents/Objective-C/Reader/Classes/DownloadController.m
+c000000004D740CFB0000000000000ADC
+t1299451131
+s2780
+i"DownloadController.h"
+
+N/Users/pedro/Documents/Objective-C/Reader/Classes/PDFScrollView.h
+c000000004D903B500000000000000CBD
+t1301298000
+s3261
+i<UIKit/UIKit.h>
+
+N/Users/pedro/Documents/Objective-C/Reader/Classes/PDFScrollView.m
+c000000004DA26F390000000000002160
+t1302490937
+s8544
+i"PDFScrollView.h"
+i"TiledPDFView.h"
+i"ReaderAppDelegate.h"
+i"RootViewController.h"
+i"DetailViewController.h"
+i<QuartzCore/QuartzCore.h>
+
+N/Users/pedro/Documents/Objective-C/Reader/Classes/ReaderAppDelegate.h
+c000000004D903D510000000000000331
+t1301298513
+s817
+i<UIKit/UIKit.h>
+
+N/Users/pedro/Documents/Objective-C/Reader/Classes/ReaderAppDelegate.m
+c000000004D903D5A00000000000007C1
+t1301298522
+s1985
+i"ReaderAppDelegate.h"
+i"RootViewController.h"
+i"DetailViewController.h"
+
+N/Users/pedro/Documents/Objective-C/Reader/Classes/RootViewController.h
+c000000004D8B4E030000000000000246
+t1300975107
+s582
+i<UIKit/UIKit.h>
+
+N/Users/pedro/Documents/Objective-C/Reader/Classes/RootViewController.m
+c000000004D9046C7000000000000198F
+t1301300935
+s6543
+i"RootViewController.h"
+i"DetailViewController.h"
+i"ReaderAppDelegate.h"
+i"CustomCell.h"
+
+N/Users/pedro/Documents/Objective-C/Reader/Classes/TiledPDFView.h
+c000000004C7DA2C10000000000000AC6
+t1283302081
+s2758
+i<UIKit/UIKit.h>
+
+N/Users/pedro/Documents/Objective-C/Reader/Classes/TiledPDFView.m
+c000000004D8DEFBA00000000000012CE
+t1301147578
+s4814
+i"TiledPDFView.h"
+i<QuartzCore/QuartzCore.h>
+
+N/Users/pedro/Documents/Objective-C/Reader/Classes/untitled.h
+c000000004D892B6E00000000000000CC
+t1300835182
+s204
+i<UIKit/UIKit.h>
+
+N/Users/pedro/Documents/Objective-C/Reader/Classes/untitled.m
+c000000004D892B6E0000000000000289
+t1300835182
+s649
+i"untitled.h"
+
+N/Users/pedro/Documents/Objective-C/Reader/DetailView.xib
+c000000004DA10F890000000000009417
+t1302400905
+s37911
+
+N/Users/pedro/Documents/Objective-C/Reader/MainWindow.xib
+c000000004D8B4A160000000000009B98
+t1300974102
+s39832
+
+N/Users/pedro/Documents/Objective-C/Reader/Reader_Prefix.pch
+c000000004D713309000000000000013E
+t1299264265
+s318
+i<Availability.h>
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/pedro/Documents/Objective-C/Reader/build/Debug-iphonesimulator/Reader.app
+t1302490941
+s442
+
+N/Users/pedro/Documents/Objective-C/Reader/build/Debug-iphonesimulator/Reader.app.dSYM
+t1302490941
+s102
+
+N/Users/pedro/Documents/Objective-C/Reader/build/Debug-iphonesimulator/Reader.app/ABO@72.png
+t1300800981
+s5730
+
+N/Users/pedro/Documents/Objective-C/Reader/build/Debug-iphonesimulator/Reader.app/CustomCell.nib
+t1300962361
+s2963
+
+N/Users/pedro/Documents/Objective-C/Reader/build/Debug-iphonesimulator/Reader.app/DetailView.nib
+t1302400914
+s2623
+
+N/Users/pedro/Documents/Objective-C/Reader/build/Debug-iphonesimulator/Reader.app/Info.plist
+t1300800980
+s820
+
+N/Users/pedro/Documents/Objective-C/Reader/build/Debug-iphonesimulator/Reader.app/MainWindow.nib
+t1300974109
+s2608
+
+N/Users/pedro/Documents/Objective-C/Reader/build/Debug-iphonesimulator/Reader.app/PkgInfo
+t1300800980
+s8
+
+N/Users/pedro/Documents/Objective-C/Reader/build/Debug-iphonesimulator/Reader.app/Reader
+t1302490941
+s75104
+
+N/Users/pedro/Documents/Objective-C/Reader/build/Debug-iphonesimulator/Reader.app/button blue.png
+t1300835411
+s5566
+
+N/Users/pedro/Documents/Objective-C/Reader/build/Debug-iphonesimulator/Reader.app/button red.png
+t1300911803
+s5619
+
+N/Users/pedro/Documents/Objective-C/Reader/build/Debug-iphonesimulator/Reader.app/icon blue add.png
+t1300835411
+s5666
+
+N/Users/pedro/Documents/Objective-C/Reader/build/Debug-iphonesimulator/Reader.app/icon red remove.png
+t1300911803
+s5671
+
+N/Users/pedro/Documents/Objective-C/Reader/build/Debug-iphonesimulator/Reader.app/untitled.nib
+t2
+s0
+
+N/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/Objects-normal/i386/CacheController.o
+t1299541534
+s39328
+
+N/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/Objects-normal/i386/CustomCell.o
+t1301939039
+s70340
+
+N/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/Objects-normal/i386/DetailViewController.o
+t1302265719
+s90716
+
+N/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/Objects-normal/i386/DownloadController.o
+t1300007601
+s16072
+
+N/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/Objects-normal/i386/PDFScrollView.o
+t1302490941
+s61192
+
+N/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/Objects-normal/i386/Reader.LinkFileList
+c000000004D90378A000000000000039F
+t1301297034
+s927
+
+N/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/Objects-normal/i386/ReaderAppDelegate.o
+t1302265719
+s54956
+
+N/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/Objects-normal/i386/RootViewController.o
+t1302265719
+s62344
+
+N/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/Objects-normal/i386/TiledPDFView.o
+t1301939039
+s43080
+
+N/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/Objects-normal/i386/main.o
+t1301939038
+s6308
+
+N/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/Objects-normal/i386/untitled.o
+t2
+s0
+
+N/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/StaticAnalyzer/normal/i386/CustomCell.plist
+t1300974246
+s276
+
+N/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/StaticAnalyzer/normal/i386/DetailViewController.plist
+t1300974246
+s9608
+
+N/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/StaticAnalyzer/normal/i386/ReaderAppDelegate.plist
+t1300974246
+s276
+
+N/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/StaticAnalyzer/normal/i386/RootViewController.plist
+t1300974246
+s276
+
+N/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/StaticAnalyzer/normal/i386/main.plist
+t1300974246
+s276
+
+N/Users/pedro/Documents/Objective-C/Reader/button blue.png
+c000000004D89235B00000000000015BE
+t1300833115
+s5566
+
+N/Users/pedro/Documents/Objective-C/Reader/button red.png
+c000000004D8A543800000000000015F3
+t1300911160
+s5619
+
+N/Users/pedro/Documents/Objective-C/Reader/icon blue add.png
+c000000004D8924480000000000001622
+t1300833352
+s5666
+
+N/Users/pedro/Documents/Objective-C/Reader/icon red remove.png
+c000000004D8A54170000000000001627
+t1300911127
+s5671
+
+N/Users/pedro/Documents/Objective-C/Reader/main.m
+c000000004D7133090000000000000162
+t1299264265
+s354
+i<UIKit/UIKit.h>
+
+N/Users/pedro/Documents/Objective-C/Reader/untitled.xib
+c000000004D88B6AF0000000000001116
+t1300805295
+s4374
+
+N/var/folders/q5/q5yrAwxFHKObSRQfGpAGAk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Reader_Prefix-cyzyqyeejykeylckdvulrggtgwtr/Reader_Prefix.pch.gch
+t1300007600
+s15453392
+
+N/var/folders/q5/q5yrAwxFHKObSRQfGpAGAk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Reader_Prefix-ekjofgoidygrczchkhitrmwmerjn/Reader_Prefix.pch.pth
+t1300974245
+s2781520
+
+N/var/folders/q5/q5yrAwxFHKObSRQfGpAGAk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Reader_Prefix-hfqvllczlhoxfibxvnjcgalfcnry/Reader_Prefix.pch.gch
+t1301939038
+s15453392
+
+NReader-Info.plist
+c000000004D7F39BE0000000000000483
+t1300183486
+s1155
+
+CAnalyze /Users/pedro/Documents/Objective-C/Reader/Classes/CustomCell.m
+s322667046.256572
+e322667046.320263
+r1
+xAnalyze
+x/Users/pedro/Documents/Objective-C/Reader/Classes/CustomCell.m
+lSLF07#2@70"Analyze /Users/pedro/Documents/Objective-C/Reader/Classes/CustomCell.m322667046#322667046#0(0"0(0#0#62"/Users/pedro/Documents/Objective-C/Reader/Classes/CustomCell.m8626521056#1956"    cd /Users/pedro/Documents/Objective-C/Reader    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/Reader-generated-files.hmap -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/Reader-own-target-headers.hmap -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/Reader-all-target-headers.hmap -iquote /Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/Reader-project-headers.hmap -F/Users/pedro/Documents/Objective-C/Reader/build/Debug-iphonesimulator -I/Users/pedro/Documents/Objective-C/Reader/build/Debug-iphonesimulator/include -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/DerivedSources/i386 -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/DerivedSources -include /var/folders/q5/q5yrAwxFHKObSRQfGpAGAk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Reader_Prefix-ekjofgoidygrczchkhitrmwmerjn/Reader_Prefix.pch --analyze /Users/pedro/Documents/Objective-C/Reader/Classes/CustomCell.m -o /Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/StaticAnalyzer/normal/i386/CustomCell.plist0#
+
+CAnalyze /Users/pedro/Documents/Objective-C/Reader/Classes/DetailViewController.m
+s322667046.221343
+e322667046.315705
+r1
+xAnalyze
+x/Users/pedro/Documents/Objective-C/Reader/Classes/DetailViewController.m
+o/Users/pedro/Documents/Objective-C/Reader/Classes/DetailViewController.m:67:37: warning: Potential leak of an object allocated on line 67 and stored into 'theConnection'
+o                 NSURLConnection * theConnection = [[NSURLConnection alloc] initWithRequest:theRequest delegate:self];
+o                                                   ^
+o1 warning generated.
+lSLF07#2@80"Analyze /Users/pedro/Documents/Objective-C/Reader/Classes/DetailViewController.m322667046#322667046#0(363"/Users/pedro/Documents/Objective-C/Reader/Classes/DetailViewController.m:67:37: warning: Potential leak of an object allocated on line 67 and stored into 'theConnection'                 NSURLConnection * theConnection = [[NSURLConnection alloc] initWithRequest:theRequest delegate:self];                                                   ^1 warning generated.1(0@80"Potential leak of an object allocated on line 67 and stored into 'theConnection'322667046#18446744073709551615#0#9(17@0"322667046#18446744073709551615#0#0(6@72"/Users/pedro/Documents/Objective-C/Reader/Classes/DetailViewController.m322647970#0#0#0#0#0"0(6@72"/Users/pedro/Documents/Objective-C/Reader/Classes/DetailViewController.m322647970#0#0#0#0#1(3@6@72"/Users/pedro/Documents/Objective-C/Reader/Classes/DetailViewController.m322647970#44#2#44#2#6@72"/Users/pedro/Documents/Objective-C/Reader/Classes/DetailViewController.m322647970#47#3#47#3#17@0"322667046#18446744073709551615#0#0(6@72"/Users/pedro/Documents/Objective-C/Reader/Classes/DetailViewController.m322647970#0#0#0#0#0"0(6@72"/Users/pedro/Documents/Objective-C/Reader/Classes/DetailViewController.m322647970#0#0#0#0#1(3@6@72"/Users/pedro/Documents/Objective-C/Reader/Classes/DetailViewController.m322647970#47#3#47#3#6@72"/Users/pedro/Documents/Objective-C/Reader/Classes/DetailViewController.m322647970#50#3#50#3#17@0"322667046#18446744073709551615#0#0(6@72"/Users/pedro/Documents/Objective-C/Reader/Classes/DetailViewController.m322647970#0#0#0#0#0"0(6@72"/Users/pedro/Documents/Objective-C/Reader/Classes/DetailViewController.m322647970#0#0#0#0#1(3@6@72"/Users/pedro/Documents/Objective-C/Reader/Classes/DetailViewController.m322647970#50#3#50#3#6@72"/Users/pedro/Documents/Objective-C/Reader/Classes/DetailViewController.m322647970#56#3#56#3#17@0"322667046#18446744073709551615#0#0(6@72"/Users/pedro/Documents/Objective-C/Reader/Classes/DetailViewController.m322647970#0#0#0#0#0"0(6@72"/Users/pedro/Documents/Objective-C/Reader/Classes/DetailViewController.m322647970#0#0#0#0#1(3@6@72"/Users/pedro/Documents/Objective-C/Reader/Classes/DetailViewController.m322647970#56#3#56#3#6@72"/Users/pedro/Documents/Objective-C/Reader/Classes/DetailViewController.m322647970#67#3#67#3#17@0"322667046#18446744073709551615#0#0(6@72"/Users/pedro/Documents/Objective-C/Reader/Classes/DetailViewController.m322647970#0#0#0#0#0"0(6@72"/Users/pedro/Documents/Objective-C/Reader/Classes/DetailViewController.m322647970#0#0#0#0#1(3@6@72"/Users/pedro/Documents/Objective-C/Reader/Classes/DetailViewController.m322647970#67#3#67#3#6@72"/Users/pedro/Documents/Objective-C/Reader/Classes/DetailViewController.m322647970#67#37#67#102#21@78"Method returns an Objective-C object with a +1 retain count (owning reference)322667046#18446744073709551615#0#0(6@72"/Users/pedro/Documents/Objective-C/Reader/Classes/DetailViewController.m322647970#67#37#0#0#0"1(6@72"/Users/pedro/Documents/Objective-C/Reader/Classes/DetailViewController.m322647970#67#37#67#102#78"Method returns an Objective-C object with a +1 retain count (owning reference)17@0"322667046#18446744073709551615#0#0(6@72"/Users/pedro/Documents/Objective-C/Reader/Classes/DetailViewController.m322647970#0#0#0#0#0"0(6@72"/Users/pedro/Documents/Objective-C/Reader/Classes/DetailViewController.m322647970#0#0#0#0#1(3@6@72"/Users/pedro/Documents/Objective-C/Reader/Classes/DetailViewController.m322647970#67#37#67#102#6@72"/Users/pedro/Documents/Objective-C/Reader/Classes/DetailViewController.m322647970#68#3#68#3#17@0"322667046#18446744073709551615#0#0(6@72"/Users/pedro/Documents/Objective-C/Reader/Classes/DetailViewController.m322647970#0#0#0#0#0"0(6@72"/Users/pedro/Documents/Objective-C/Reader/Classes/DetailViewController.m322647970#0#0#0#0#1(3@6@72"/Users/pedro/Documents/Objective-C/Reader/Classes/DetailViewController.m322647970#68#3#68#3#6@72"/Users/pedro/Documents/Objective-C/Reader/Classes/DetailViewController.m322647970#70#4#70#7#21@145"Object allocated on line 67 and stored into 'theConnection' is no longer referenced after this point and has a retain count of +1 (object leaked)322667046#18446744073709551615#0#0(6@72"/Users/pedro/Documents/Objective-C/Reader/Classes/DetailViewController.m322647970#70#4#0#0#0"1(6@72"/Users/pedro/Documents/Objective-C/Reader/Classes/DetailViewController.m322647970#70#4#70#7#145"Object allocated on line 67 and stored into 'theConnection' is no longer referenced after this point and has a retain count of +1 (object leaked)6@72"/Users/pedro/Documents/Objective-C/Reader/Classes/DetailViewController.m322647970#70#4#0#0#36"Memory (Core Foundation/Objective-C)0(4"Leak0#0#72"/Users/pedro/Documents/Objective-C/Reader/Classes/DetailViewController.m8626941728#1976"    cd /Users/pedro/Documents/Objective-C/Reader    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/Reader-generated-files.hmap -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/Reader-own-target-headers.hmap -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/Reader-all-target-headers.hmap -iquote /Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/Reader-project-headers.hmap -F/Users/pedro/Documents/Objective-C/Reader/build/Debug-iphonesimulator -I/Users/pedro/Documents/Objective-C/Reader/build/Debug-iphonesimulator/include -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/DerivedSources/i386 -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/DerivedSources -include /var/folders/q5/q5yrAwxFHKObSRQfGpAGAk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Reader_Prefix-ekjofgoidygrczchkhitrmwmerjn/Reader_Prefix.pch --analyze /Users/pedro/Documents/Objective-C/Reader/Classes/DetailViewController.m -o /Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/StaticAnalyzer/normal/i386/DetailViewController.plist0#
+
+CAnalyze /Users/pedro/Documents/Objective-C/Reader/Classes/ReaderAppDelegate.m
+s322667046.065080
+e322667046.123533
+r1
+xAnalyze
+x/Users/pedro/Documents/Objective-C/Reader/Classes/ReaderAppDelegate.m
+lSLF07#2@77"Analyze /Users/pedro/Documents/Objective-C/Reader/Classes/ReaderAppDelegate.m322667046#322667046#0(0"0(0#0#69"/Users/pedro/Documents/Objective-C/Reader/Classes/ReaderAppDelegate.m8626761152#1970"    cd /Users/pedro/Documents/Objective-C/Reader    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/Reader-generated-files.hmap -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/Reader-own-target-headers.hmap -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/Reader-all-target-headers.hmap -iquote /Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/Reader-project-headers.hmap -F/Users/pedro/Documents/Objective-C/Reader/build/Debug-iphonesimulator -I/Users/pedro/Documents/Objective-C/Reader/build/Debug-iphonesimulator/include -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/DerivedSources/i386 -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/DerivedSources -include /var/folders/q5/q5yrAwxFHKObSRQfGpAGAk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Reader_Prefix-ekjofgoidygrczchkhitrmwmerjn/Reader_Prefix.pch --analyze /Users/pedro/Documents/Objective-C/Reader/Classes/ReaderAppDelegate.m -o /Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/StaticAnalyzer/normal/i386/ReaderAppDelegate.plist0#
+
+CAnalyze /Users/pedro/Documents/Objective-C/Reader/Classes/RootViewController.m
+s322667046.123634
+e322667046.221245
+r1
+xAnalyze
+x/Users/pedro/Documents/Objective-C/Reader/Classes/RootViewController.m
+lSLF07#2@78"Analyze /Users/pedro/Documents/Objective-C/Reader/Classes/RootViewController.m322667046#322667046#0(0"0(0#0#70"/Users/pedro/Documents/Objective-C/Reader/Classes/RootViewController.m8615382976#1972"    cd /Users/pedro/Documents/Objective-C/Reader    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/Reader-generated-files.hmap -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/Reader-own-target-headers.hmap -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/Reader-all-target-headers.hmap -iquote /Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/Reader-project-headers.hmap -F/Users/pedro/Documents/Objective-C/Reader/build/Debug-iphonesimulator -I/Users/pedro/Documents/Objective-C/Reader/build/Debug-iphonesimulator/include -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/DerivedSources/i386 -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/DerivedSources -include /var/folders/q5/q5yrAwxFHKObSRQfGpAGAk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Reader_Prefix-ekjofgoidygrczchkhitrmwmerjn/Reader_Prefix.pch --analyze /Users/pedro/Documents/Objective-C/Reader/Classes/RootViewController.m -o /Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/StaticAnalyzer/normal/i386/RootViewController.plist0#
+
+CAnalyze /Users/pedro/Documents/Objective-C/Reader/main.m
+s322667045.979773
+e322667046.064967
+r1
+xAnalyze
+x/Users/pedro/Documents/Objective-C/Reader/main.m
+lSLF07#2@56"Analyze /Users/pedro/Documents/Objective-C/Reader/main.m322667045#322667046#0(0"0(0#0#48"/Users/pedro/Documents/Objective-C/Reader/main.m8627090240#1936"    cd /Users/pedro/Documents/Objective-C/Reader    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/Reader-generated-files.hmap -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/Reader-own-target-headers.hmap -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/Reader-all-target-headers.hmap -iquote /Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/Reader-project-headers.hmap -F/Users/pedro/Documents/Objective-C/Reader/build/Debug-iphonesimulator -I/Users/pedro/Documents/Objective-C/Reader/build/Debug-iphonesimulator/include -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/DerivedSources/i386 -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/DerivedSources -include /var/folders/q5/q5yrAwxFHKObSRQfGpAGAk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Reader_Prefix-ekjofgoidygrczchkhitrmwmerjn/Reader_Prefix.pch --analyze /Users/pedro/Documents/Objective-C/Reader/main.m -o /Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/StaticAnalyzer/normal/i386/main.plist0#
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies324183740#324183740#0(0"0(0#1#0"8623390848#0"0#
+
+CCompileC build/Reader.build/Debug-iphonesimulator/Reader.build/Objects-normal/i386/CacheController.o /Users/pedro/Documents/Objective-C/Reader/Classes/CacheController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s321234334.365249
+e321234334.448651
+r1
+xCompileC
+xbuild/Reader.build/Debug-iphonesimulator/Reader.build/Objects-normal/i386/CacheController.o
+x/Users/pedro/Documents/Objective-C/Reader/Classes/CacheController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@75"Compile /Users/pedro/Documents/Objective-C/Reader/Classes/CacheController.m321234334#321234334#0(0"0(0#0#67"/Users/pedro/Documents/Objective-C/Reader/Classes/CacheController.m8620459424#1969"    cd /Users/pedro/Documents/Objective-C/Reader    setenv LANG en_US.US-ASCII    setenv PATH "/Developer4.2/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer4.2/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer4.2/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer4.2/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/Reader-generated-files.hmap -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/Reader-own-target-headers.hmap -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/Reader-all-target-headers.hmap -iquote /Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/Reader-project-headers.hmap -F/Users/pedro/Documents/Objective-C/Reader/build/Debug-iphonesimulator -I/Users/pedro/Documents/Objective-C/Reader/build/Debug-iphonesimulator/include -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/DerivedSources/i386 -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/DerivedSources -include /var/folders/q5/q5yrAwxFHKObSRQfGpAGAk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Reader_Prefix-cyzyqyeejykeylckdvulrggtgwtr/Reader_Prefix.pch -c /Users/pedro/Documents/Objective-C/Reader/Classes/CacheController.m -o /Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/Objects-normal/i386/CacheController.o0#
+
+CCompileC build/Reader.build/Debug-iphonesimulator/Reader.build/Objects-normal/i386/CustomCell.o /Users/pedro/Documents/Objective-C/Reader/Classes/CustomCell.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s323631838.918182
+e323631839.035185
+r1
+xCompileC
+xbuild/Reader.build/Debug-iphonesimulator/Reader.build/Objects-normal/i386/CustomCell.o
+x/Users/pedro/Documents/Objective-C/Reader/Classes/CustomCell.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@70"Compile /Users/pedro/Documents/Objective-C/Reader/Classes/CustomCell.m323631838#323631839#0(0"0(0#0#62"/Users/pedro/Documents/Objective-C/Reader/Classes/CustomCell.m8606086400#1947"    cd /Users/pedro/Documents/Objective-C/Reader    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/Reader-generated-files.hmap -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/Reader-own-target-headers.hmap -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/Reader-all-target-headers.hmap -iquote /Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/Reader-project-headers.hmap -F/Users/pedro/Documents/Objective-C/Reader/build/Debug-iphonesimulator -I/Users/pedro/Documents/Objective-C/Reader/build/Debug-iphonesimulator/include -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/DerivedSources/i386 -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/DerivedSources -include /var/folders/q5/q5yrAwxFHKObSRQfGpAGAk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Reader_Prefix-hfqvllczlhoxfibxvnjcgalfcnry/Reader_Prefix.pch -c /Users/pedro/Documents/Objective-C/Reader/Classes/CustomCell.m -o /Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/Objects-normal/i386/CustomCell.o0#
+
+CCompileC build/Reader.build/Debug-iphonesimulator/Reader.build/Objects-normal/i386/DetailViewController.o /Users/pedro/Documents/Objective-C/Reader/Classes/DetailViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s323958519.611730
+e323958519.805644
+r1
+xCompileC
+xbuild/Reader.build/Debug-iphonesimulator/Reader.build/Objects-normal/i386/DetailViewController.o
+x/Users/pedro/Documents/Objective-C/Reader/Classes/DetailViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@80"Compile /Users/pedro/Documents/Objective-C/Reader/Classes/DetailViewController.m323958519#323958519#0(0"0(0#0#72"/Users/pedro/Documents/Objective-C/Reader/Classes/DetailViewController.m8614654304#1967"    cd /Users/pedro/Documents/Objective-C/Reader    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/Reader-generated-files.hmap -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/Reader-own-target-headers.hmap -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/Reader-all-target-headers.hmap -iquote /Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/Reader-project-headers.hmap -F/Users/pedro/Documents/Objective-C/Reader/build/Debug-iphonesimulator -I/Users/pedro/Documents/Objective-C/Reader/build/Debug-iphonesimulator/include -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/DerivedSources/i386 -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/DerivedSources -include /var/folders/q5/q5yrAwxFHKObSRQfGpAGAk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Reader_Prefix-hfqvllczlhoxfibxvnjcgalfcnry/Reader_Prefix.pch -c /Users/pedro/Documents/Objective-C/Reader/Classes/DetailViewController.m -o /Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/Objects-normal/i386/DetailViewController.o0#
+
+CCompileC build/Reader.build/Debug-iphonesimulator/Reader.build/Objects-normal/i386/DownloadController.o /Users/pedro/Documents/Objective-C/Reader/Classes/DownloadController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s321700400.914893
+e321700401.010234
+r1
+xCompileC
+xbuild/Reader.build/Debug-iphonesimulator/Reader.build/Objects-normal/i386/DownloadController.o
+x/Users/pedro/Documents/Objective-C/Reader/Classes/DownloadController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@78"Compile /Users/pedro/Documents/Objective-C/Reader/Classes/DownloadController.m321700400#321700401#0(0"0(0#0#70"/Users/pedro/Documents/Objective-C/Reader/Classes/DownloadController.m8608861184#1975"    cd /Users/pedro/Documents/Objective-C/Reader    setenv LANG en_US.US-ASCII    setenv PATH "/Developer4.2/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer4.2/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer4.2/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer4.2/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/Reader-generated-files.hmap -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/Reader-own-target-headers.hmap -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/Reader-all-target-headers.hmap -iquote /Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/Reader-project-headers.hmap -F/Users/pedro/Documents/Objective-C/Reader/build/Debug-iphonesimulator -I/Users/pedro/Documents/Objective-C/Reader/build/Debug-iphonesimulator/include -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/DerivedSources/i386 -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/DerivedSources -include /var/folders/q5/q5yrAwxFHKObSRQfGpAGAk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Reader_Prefix-cyzyqyeejykeylckdvulrggtgwtr/Reader_Prefix.pch -c /Users/pedro/Documents/Objective-C/Reader/Classes/DownloadController.m -o /Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/Objects-normal/i386/DownloadController.o0#
+
+CCompileC build/Reader.build/Debug-iphonesimulator/Reader.build/Objects-normal/i386/PDFScrollView.o /Users/pedro/Documents/Objective-C/Reader/Classes/PDFScrollView.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s324183740.931370
+e324183741.060826
+r1
+xCompileC
+xbuild/Reader.build/Debug-iphonesimulator/Reader.build/Objects-normal/i386/PDFScrollView.o
+x/Users/pedro/Documents/Objective-C/Reader/Classes/PDFScrollView.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@73"Compile /Users/pedro/Documents/Objective-C/Reader/Classes/PDFScrollView.m324183740#324183741#0(0"0(0#0#65"/Users/pedro/Documents/Objective-C/Reader/Classes/PDFScrollView.m8623044736#1953"    cd /Users/pedro/Documents/Objective-C/Reader    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/Reader-generated-files.hmap -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/Reader-own-target-headers.hmap -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/Reader-all-target-headers.hmap -iquote /Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/Reader-project-headers.hmap -F/Users/pedro/Documents/Objective-C/Reader/build/Debug-iphonesimulator -I/Users/pedro/Documents/Objective-C/Reader/build/Debug-iphonesimulator/include -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/DerivedSources/i386 -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/DerivedSources -include /var/folders/q5/q5yrAwxFHKObSRQfGpAGAk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Reader_Prefix-hfqvllczlhoxfibxvnjcgalfcnry/Reader_Prefix.pch -c /Users/pedro/Documents/Objective-C/Reader/Classes/PDFScrollView.m -o /Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/Objects-normal/i386/PDFScrollView.o0#
+
+CCompileC build/Reader.build/Debug-iphonesimulator/Reader.build/Objects-normal/i386/ReaderAppDelegate.o /Users/pedro/Documents/Objective-C/Reader/Classes/ReaderAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s323958519.610182
+e323958519.734670
+r1
+xCompileC
+xbuild/Reader.build/Debug-iphonesimulator/Reader.build/Objects-normal/i386/ReaderAppDelegate.o
+x/Users/pedro/Documents/Objective-C/Reader/Classes/ReaderAppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@77"Compile /Users/pedro/Documents/Objective-C/Reader/Classes/ReaderAppDelegate.m323958519#323958519#0(0"0(0#0#69"/Users/pedro/Documents/Objective-C/Reader/Classes/ReaderAppDelegate.m8614981696#1961"    cd /Users/pedro/Documents/Objective-C/Reader    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/Reader-generated-files.hmap -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/Reader-own-target-headers.hmap -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/Reader-all-target-headers.hmap -iquote /Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/Reader-project-headers.hmap -F/Users/pedro/Documents/Objective-C/Reader/build/Debug-iphonesimulator -I/Users/pedro/Documents/Objective-C/Reader/build/Debug-iphonesimulator/include -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/DerivedSources/i386 -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/DerivedSources -include /var/folders/q5/q5yrAwxFHKObSRQfGpAGAk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Reader_Prefix-hfqvllczlhoxfibxvnjcgalfcnry/Reader_Prefix.pch -c /Users/pedro/Documents/Objective-C/Reader/Classes/ReaderAppDelegate.m -o /Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/Objects-normal/i386/ReaderAppDelegate.o0#
+
+CCompileC build/Reader.build/Debug-iphonesimulator/Reader.build/Objects-normal/i386/RootViewController.o /Users/pedro/Documents/Objective-C/Reader/Classes/RootViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s323958519.611012
+e323958519.734863
+r1
+xCompileC
+xbuild/Reader.build/Debug-iphonesimulator/Reader.build/Objects-normal/i386/RootViewController.o
+x/Users/pedro/Documents/Objective-C/Reader/Classes/RootViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@78"Compile /Users/pedro/Documents/Objective-C/Reader/Classes/RootViewController.m323958519#323958519#0(0"0(0#0#70"/Users/pedro/Documents/Objective-C/Reader/Classes/RootViewController.m8614833216#1963"    cd /Users/pedro/Documents/Objective-C/Reader    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/Reader-generated-files.hmap -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/Reader-own-target-headers.hmap -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/Reader-all-target-headers.hmap -iquote /Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/Reader-project-headers.hmap -F/Users/pedro/Documents/Objective-C/Reader/build/Debug-iphonesimulator -I/Users/pedro/Documents/Objective-C/Reader/build/Debug-iphonesimulator/include -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/DerivedSources/i386 -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/DerivedSources -include /var/folders/q5/q5yrAwxFHKObSRQfGpAGAk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Reader_Prefix-hfqvllczlhoxfibxvnjcgalfcnry/Reader_Prefix.pch -c /Users/pedro/Documents/Objective-C/Reader/Classes/RootViewController.m -o /Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/Objects-normal/i386/RootViewController.o0#
+
+CCompileC build/Reader.build/Debug-iphonesimulator/Reader.build/Objects-normal/i386/TiledPDFView.o /Users/pedro/Documents/Objective-C/Reader/Classes/TiledPDFView.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s323631838.969582
+e323631839.055475
+r1
+xCompileC
+xbuild/Reader.build/Debug-iphonesimulator/Reader.build/Objects-normal/i386/TiledPDFView.o
+x/Users/pedro/Documents/Objective-C/Reader/Classes/TiledPDFView.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@72"Compile /Users/pedro/Documents/Objective-C/Reader/Classes/TiledPDFView.m323631838#323631839#0(0"0(0#0#64"/Users/pedro/Documents/Objective-C/Reader/Classes/TiledPDFView.m8604566528#1951"    cd /Users/pedro/Documents/Objective-C/Reader    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/Reader-generated-files.hmap -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/Reader-own-target-headers.hmap -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/Reader-all-target-headers.hmap -iquote /Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/Reader-project-headers.hmap -F/Users/pedro/Documents/Objective-C/Reader/build/Debug-iphonesimulator -I/Users/pedro/Documents/Objective-C/Reader/build/Debug-iphonesimulator/include -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/DerivedSources/i386 -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/DerivedSources -include /var/folders/q5/q5yrAwxFHKObSRQfGpAGAk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Reader_Prefix-hfqvllczlhoxfibxvnjcgalfcnry/Reader_Prefix.pch -c /Users/pedro/Documents/Objective-C/Reader/Classes/TiledPDFView.m -o /Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/Objects-normal/i386/TiledPDFView.o0#
+
+CCompileC build/Reader.build/Debug-iphonesimulator/Reader.build/Objects-normal/i386/main.o /Users/pedro/Documents/Objective-C/Reader/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s323631838.778493
+e323631838.918063
+r1
+xCompileC
+xbuild/Reader.build/Debug-iphonesimulator/Reader.build/Objects-normal/i386/main.o
+x/Users/pedro/Documents/Objective-C/Reader/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@56"Compile /Users/pedro/Documents/Objective-C/Reader/main.m323631838#323631838#0(0"0(0#0#48"/Users/pedro/Documents/Objective-C/Reader/main.m8594973120#1927"    cd /Users/pedro/Documents/Objective-C/Reader    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/Reader-generated-files.hmap -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/Reader-own-target-headers.hmap -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/Reader-all-target-headers.hmap -iquote /Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/Reader-project-headers.hmap -F/Users/pedro/Documents/Objective-C/Reader/build/Debug-iphonesimulator -I/Users/pedro/Documents/Objective-C/Reader/build/Debug-iphonesimulator/include -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/DerivedSources/i386 -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/DerivedSources -include /var/folders/q5/q5yrAwxFHKObSRQfGpAGAk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Reader_Prefix-hfqvllczlhoxfibxvnjcgalfcnry/Reader_Prefix.pch -c /Users/pedro/Documents/Objective-C/Reader/main.m -o /Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/Objects-normal/i386/main.o0#
+
+CCompileC build/Reader.build/Debug-iphonesimulator/Reader.build/Objects-normal/i386/untitled.o /Users/pedro/Documents/Objective-C/Reader/Classes/untitled.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileXIB /Users/pedro/Documents/Objective-C/Reader/Classes/CustomCell.xib
+s322655161.301014
+e322655161.974314
+r1
+xCompileXIB
+x/Users/pedro/Documents/Objective-C/Reader/Classes/CustomCell.xib
+lSLF07#2@33"CompileXIB Classes/CustomCell.xib322655161#322655161#0(0"0(0#0#64"/Users/pedro/Documents/Objective-C/Reader/Classes/CustomCell.xib30962681237012596#586"    cd /Users/pedro/Documents/Objective-C/Reader    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/pedro/Documents/Objective-C/Reader/build/Debug-iphonesimulator/Reader.app/CustomCell.nib /Users/pedro/Documents/Objective-C/Reader/Classes/CustomCell.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
+
+CCompileXIB /Users/pedro/Documents/Objective-C/Reader/DetailView.xib
+s324093714.582677
+e324093714.990679
+r1
+xCompileXIB
+x/Users/pedro/Documents/Objective-C/Reader/DetailView.xib
+lSLF07#2@25"CompileXIB DetailView.xib324093714#324093714#0(0"0(0#0#56"/Users/pedro/Documents/Objective-C/Reader/DetailView.xib8612986688#578"    cd /Users/pedro/Documents/Objective-C/Reader    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/pedro/Documents/Objective-C/Reader/build/Debug-iphonesimulator/Reader.app/DetailView.nib /Users/pedro/Documents/Objective-C/Reader/DetailView.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
+
+CCompileXIB /Users/pedro/Documents/Objective-C/Reader/MainWindow.xib
+s322666907.725032
+e322666909.582936
+r1
+xCompileXIB
+x/Users/pedro/Documents/Objective-C/Reader/MainWindow.xib
+lSLF07#2@25"CompileXIB MainWindow.xib322666907#322666909#0(0"0(0#0#56"/Users/pedro/Documents/Objective-C/Reader/MainWindow.xib8625661152#578"    cd /Users/pedro/Documents/Objective-C/Reader    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/pedro/Documents/Objective-C/Reader/build/Debug-iphonesimulator/Reader.app/MainWindow.nib /Users/pedro/Documents/Objective-C/Reader/MainWindow.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
+
+CCompileXIB /Users/pedro/Documents/Objective-C/Reader/untitled.xib
+r0
+
+CCpResource "build/Debug-iphonesimulator/Reader.app/button blue.png" "button blue.png"
+s322528211.211592
+e322528211.293963
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/Reader.app/button blue.png
+xbutton blue.png
+lSLF07#2@20"Copy button blue.png322528211#322528211#0(0"0(0#0#57"/Users/pedro/Documents/Objective-C/Reader/button blue.png8631441856#483"    cd /Users/pedro/Documents/Objective-C/Reader    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks "/Users/pedro/Documents/Objective-C/Reader/button blue.png" /Users/pedro/Documents/Objective-C/Reader/build/Debug-iphonesimulator/Reader.app0#
+
+CCpResource "build/Debug-iphonesimulator/Reader.app/button red.png" "button red.png"
+s322604603.203950
+e322604603.282193
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/Reader.app/button red.png
+xbutton red.png
+lSLF07#2@19"Copy button red.png322604603#322604603#0(0"0(0#0#56"/Users/pedro/Documents/Objective-C/Reader/button red.png8612262400#482"    cd /Users/pedro/Documents/Objective-C/Reader    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks "/Users/pedro/Documents/Objective-C/Reader/button red.png" /Users/pedro/Documents/Objective-C/Reader/build/Debug-iphonesimulator/Reader.app0#
+
+CCpResource "build/Debug-iphonesimulator/Reader.app/icon blue add.png" "icon blue add.png"
+s322528211.212480
+e322528211.294390
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/Reader.app/icon blue add.png
+xicon blue add.png
+lSLF07#2@22"Copy icon blue add.png322528211#322528211#0(0"0(0#0#59"/Users/pedro/Documents/Objective-C/Reader/icon blue add.png8626434560#485"    cd /Users/pedro/Documents/Objective-C/Reader    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks "/Users/pedro/Documents/Objective-C/Reader/icon blue add.png" /Users/pedro/Documents/Objective-C/Reader/build/Debug-iphonesimulator/Reader.app0#
+
+CCpResource "build/Debug-iphonesimulator/Reader.app/icon red remove.png" "icon red remove.png"
+s322604603.224558
+e322604603.275210
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/Reader.app/icon red remove.png
+xicon red remove.png
+lSLF07#2@24"Copy icon red remove.png322604603#322604603#0(0"0(0#0#61"/Users/pedro/Documents/Objective-C/Reader/icon red remove.png8611804448#487"    cd /Users/pedro/Documents/Objective-C/Reader    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks "/Users/pedro/Documents/Objective-C/Reader/icon red remove.png" /Users/pedro/Documents/Objective-C/Reader/build/Debug-iphonesimulator/Reader.app0#
+
+CCpResource build/Debug-iphonesimulator/Reader.app/ABO@72.png ABO@72.png
+s322493781.197002
+e322493781.279965
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/Reader.app/ABO@72.png
+xABO@72.png
+lSLF07#2@15"Copy ABO@72.png322493781#322493781#0(0"0(0#0#52"/Users/pedro/Documents/Objective-C/Reader/ABO@72.png8608303136#476"    cd /Users/pedro/Documents/Objective-C/Reader    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/pedro/Documents/Objective-C/Reader/ABO@72.png /Users/pedro/Documents/Objective-C/Reader/build/Debug-iphonesimulator/Reader.app0#
+
+CGenerateDSYMFile /Users/pedro/Documents/Objective-C/Reader/build/Debug-iphonesimulator/Reader.app.dSYM /Users/pedro/Documents/Objective-C/Reader/build/Debug-iphonesimulator/Reader.app/Reader
+s324183741.085514
+e324183741.105839
+r1
+xGenerateDSYMFile
+x/Users/pedro/Documents/Objective-C/Reader/build/Debug-iphonesimulator/Reader.app.dSYM
+x/Users/pedro/Documents/Objective-C/Reader/build/Debug-iphonesimulator/Reader.app/Reader
+lSLF07#2@106"GenerateDSYMFile build/Debug-iphonesimulator/Reader.app.dSYM build/Debug-iphonesimulator/Reader.app/Reader324183741#324183741#0(0"0(0#0#87"/Users/pedro/Documents/Objective-C/Reader/build/Debug-iphonesimulator/Reader.app/Reader8622345984#389"    cd /Users/pedro/Documents/Objective-C/Reader    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/pedro/Documents/Objective-C/Reader/build/Debug-iphonesimulator/Reader.app/Reader -o /Users/pedro/Documents/Objective-C/Reader/build/Debug-iphonesimulator/Reader.app.dSYM0#
+
+CLd /Users/pedro/Documents/Objective-C/Reader/build/Debug-iphonesimulator/Reader.app/Reader normal i386
+s324183741.060927
+e324183741.085419
+r1
+xLd
+x/Users/pedro/Documents/Objective-C/Reader/build/Debug-iphonesimulator/Reader.app/Reader
+xnormal
+xi386
+lSLF07#2@92"Link /Users/pedro/Documents/Objective-C/Reader/build/Debug-iphonesimulator/Reader.app/Reader324183741#324183741#0(0"0(0#0#0"8622822240#932"    cd /Users/pedro/Documents/Objective-C/Reader    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -L/Users/pedro/Documents/Objective-C/Reader/build/Debug-iphonesimulator -F/Users/pedro/Documents/Objective-C/Reader/build/Debug-iphonesimulator -filelist /Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/Objects-normal/i386/Reader.LinkFileList -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -framework Foundation -framework UIKit -framework CoreGraphics -framework QuartzCore -o /Users/pedro/Documents/Objective-C/Reader/build/Debug-iphonesimulator/Reader.app/Reader0#
+
+CProcessInfoPlistFile /Users/pedro/Documents/Objective-C/Reader/build/Debug-iphonesimulator/Reader.app/Info.plist Reader-Info.plist
+s322493780.530834
+e322493780.558127
+r1
+xProcessInfoPlistFile
+x/Users/pedro/Documents/Objective-C/Reader/build/Debug-iphonesimulator/Reader.app/Info.plist
+xReader-Info.plist
+lSLF07#2@25"Process Reader-Info.plist322493780#322493780#0(0"0(0#0#59"/Users/pedro/Documents/Objective-C/Reader/Reader-Info.plist29555065834897524#485"    cd /Users/pedro/Documents/Objective-C/Reader    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility Reader-Info.plist -genpkginfo /Users/pedro/Documents/Objective-C/Reader/build/Debug-iphonesimulator/Reader.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/pedro/Documents/Objective-C/Reader/build/Debug-iphonesimulator/Reader.app/Info.plist0#
+
+CProcessPCH /var/folders/q5/q5yrAwxFHKObSRQfGpAGAk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Reader_Prefix-cyzyqyeejykeylckdvulrggtgwtr/Reader_Prefix.pch.gch Reader_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+s321700396.214919
+e321700400.582110
+r1
+xProcessPCH
+x/var/folders/q5/q5yrAwxFHKObSRQfGpAGAk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Reader_Prefix-cyzyqyeejykeylckdvulrggtgwtr/Reader_Prefix.pch.gch
+xReader_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@28"Precompile Reader_Prefix.pch321700396#321700400#0(0"0(0#0#59"/Users/pedro/Documents/Objective-C/Reader/Reader_Prefix.pch7309993516047098880#1829"    cd /Users/pedro/Documents/Objective-C/Reader    setenv LANG en_US.US-ASCII    setenv PATH "/Developer4.2/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer4.2/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer4.2/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer4.2/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/Reader-generated-files.hmap -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/Reader-own-target-headers.hmap -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/Reader-all-target-headers.hmap -iquote /Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/Reader-project-headers.hmap -F/Users/pedro/Documents/Objective-C/Reader/build/Debug-iphonesimulator -I/Users/pedro/Documents/Objective-C/Reader/build/Debug-iphonesimulator/include -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/DerivedSources/i386 -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/DerivedSources -c /Users/pedro/Documents/Objective-C/Reader/Reader_Prefix.pch -o /var/folders/q5/q5yrAwxFHKObSRQfGpAGAk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Reader_Prefix-cyzyqyeejykeylckdvulrggtgwtr/Reader_Prefix.pch.gch0#
+
+CProcessPCH /var/folders/q5/q5yrAwxFHKObSRQfGpAGAk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Reader_Prefix-ekjofgoidygrczchkhitrmwmerjn/Reader_Prefix.pch.pth Reader_Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.analyzer
+s322667045.221381
+e322667045.953544
+r1
+xProcessPCH
+x/var/folders/q5/q5yrAwxFHKObSRQfGpAGAk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Reader_Prefix-ekjofgoidygrczchkhitrmwmerjn/Reader_Prefix.pch.pth
+xReader_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.analyzer
+lSLF07#2@28"Precompile Reader_Prefix.pch322667045#322667045#0(0"0(0#0#59"/Users/pedro/Documents/Objective-C/Reader/Reader_Prefix.pch8615401984#1808"    cd /Users/pedro/Documents/Objective-C/Reader    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/clang -x objective-c-header -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/Reader-generated-files.hmap -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/Reader-own-target-headers.hmap -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/Reader-all-target-headers.hmap -iquote /Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/Reader-project-headers.hmap -F/Users/pedro/Documents/Objective-C/Reader/build/Debug-iphonesimulator -I/Users/pedro/Documents/Objective-C/Reader/build/Debug-iphonesimulator/include -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/DerivedSources/i386 -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/DerivedSources -c /Users/pedro/Documents/Objective-C/Reader/Reader_Prefix.pch -o /var/folders/q5/q5yrAwxFHKObSRQfGpAGAk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Reader_Prefix-ekjofgoidygrczchkhitrmwmerjn/Reader_Prefix.pch.pth0#
+
+CProcessPCH /var/folders/q5/q5yrAwxFHKObSRQfGpAGAk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Reader_Prefix-hfqvllczlhoxfibxvnjcgalfcnry/Reader_Prefix.pch.gch Reader_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+s323631838.134950
+e323631838.778398
+r1
+xProcessPCH
+x/var/folders/q5/q5yrAwxFHKObSRQfGpAGAk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Reader_Prefix-hfqvllczlhoxfibxvnjcgalfcnry/Reader_Prefix.pch.gch
+xReader_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@28"Precompile Reader_Prefix.pch323631838#323631838#0(0"0(0#0#59"/Users/pedro/Documents/Objective-C/Reader/Reader_Prefix.pch8678269822085327872#1817"    cd /Users/pedro/Documents/Objective-C/Reader    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/Reader-generated-files.hmap -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/Reader-own-target-headers.hmap -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/Reader-all-target-headers.hmap -iquote /Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/Reader-project-headers.hmap -F/Users/pedro/Documents/Objective-C/Reader/build/Debug-iphonesimulator -I/Users/pedro/Documents/Objective-C/Reader/build/Debug-iphonesimulator/include -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/DerivedSources/i386 -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphonesimulator/Reader.build/DerivedSources -c /Users/pedro/Documents/Objective-C/Reader/Reader_Prefix.pch -o /var/folders/q5/q5yrAwxFHKObSRQfGpAGAk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Reader_Prefix-hfqvllczlhoxfibxvnjcgalfcnry/Reader_Prefix.pch.gch0#
+
+CTouch /Users/pedro/Documents/Objective-C/Reader/build/Debug-iphonesimulator/Reader.app
+s324183741.105916
+e324183741.107860
+r1
+xTouch
+x/Users/pedro/Documents/Objective-C/Reader/build/Debug-iphonesimulator/Reader.app
+lSLF07#2@86"Touch /Users/pedro/Documents/Objective-C/Reader/build/Debug-iphonesimulator/Reader.app324183741#324183741#0(0"0(0#0#0"8622113984#283"    cd /Users/pedro/Documents/Objective-C/Reader    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/pedro/Documents/Objective-C/Reader/build/Debug-iphonesimulator/Reader.app0#
+

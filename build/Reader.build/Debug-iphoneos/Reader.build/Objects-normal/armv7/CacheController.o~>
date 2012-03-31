@@ -1,0 +1,6 @@
+In file included from /Users/pedro/Documents/Objective-C/Reader/Classes/CacheController.m:9:
+/Users/pedro/Documents/Objective-C/Reader/Classes/CacheController.h:13: error: expected ';' before 'interface'
+/Users/pedro/Documents/Objective-C/Reader/Classes/CacheController.h:21: error: expected '{' before 'end'
+/Users/pedro/Documents/Objective-C/Reader/Classes/CacheController.h:21: warning: '@end' must appear in an @implementation context
+/Users/pedro/Documents/Objective-C/Reader/Classes/CacheController.m:14: warning: cannot find interface declaration for 'CacheController'
+/Users/pedro/Documents/Objective-C/Reader/Classes/CacheController.m:14: error: no declaration of property 'detail' found in the interface

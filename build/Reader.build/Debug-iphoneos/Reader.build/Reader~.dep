@@ -1,0 +1,15 @@
+aca32e9982621a4391c3da26ebcc4c5b 8ef032607af73c9b2ec80d9da7d8f1ab ffffffffffffffffffffffffffffffff 418 /Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphoneos/Reader.build/Reader.xcent
+de2476e7548efc72d64ae3f223b7314b 03db3d1865e59aac94c58e011b7d2067 ffffffffffffffffffffffffffffffff 374 /Users/pedro/Documents/Objective-C/Reader/build/Debug-iphoneos/Reader.app
+00000000000000000000000000000000 bda5e4d6898646aa0781121a640b9672 ffffffffffffffffffffffffffffffff 7782 /Users/pedro/Documents/Objective-C/Reader/build/Debug-iphoneos/Reader.app/embedded.mobileprovision
+000000004d716a9c0000000000005aee 41d58ca45ab7938e60fa9d7ddc752cea ffffffffffffffffffffffffffffffff 1656 /Users/pedro/Documents/Objective-C/Reader/build/Debug-iphoneos/Reader.app/DetailView.nib
+000000004d7166270000000000007062 4d0fc53c9af8fbccc7fc0ce22820dd05 ffffffffffffffffffffffffffffffff 1933 /Users/pedro/Documents/Objective-C/Reader/build/Debug-iphoneos/Reader.app/MainWindow.nib
+00000000000000000000000000000000 aca32e9982621a4391c3da26ebcc4c5b ffffffffffffffffffffffffffffffff 8 /Users/pedro/Documents/Objective-C/Reader/build/Debug-iphoneos/Reader.app/PkgInfo
+00000000000000000000000000000000 aca32e9982621a4391c3da26ebcc4c5b ffffffffffffffffffffffffffffffff 984 /Users/pedro/Documents/Objective-C/Reader/build/Debug-iphoneos/Reader.app/Info.plist
+00000000000000000000000000000000 ed99b9aafda4394f5db013a1593e3297 ffffffffffffffffffffffffffffffff 485 /Users/pedro/Documents/Objective-C/Reader/build/Debug-iphoneos/Reader.app/ResourceRules.plist
+00000000000000000000000000000000 ff8d1496db6e825baab92cf36506dade ffffffffffffffffffffffffffffffff 102 /Users/pedro/Documents/Objective-C/Reader/build/Debug-iphoneos/Reader.app.dSYM
+ce414dc52d3fc029a93a3dac047b2607 4c832fc6cddc274782474e7aeeac68ca ffffffffffffffffffffffffffffffff 27760 /Users/pedro/Documents/Objective-C/Reader/build/Debug-iphoneos/Reader.app/Reader
+943a601cbd6490aaecdc77ebafa497d0 bdc9ab3d3ca86e378b0cadfddf98c9eb ffffffffffffffffffffffffffffffff 51052 /Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphoneos/Reader.build/Objects-normal/armv7/DetailViewController.o
+943a601cbd649e01ecdc77ebafa48a8d 80749b7548c8725b8f9ffa486c149a35 ffffffffffffffffffffffffffffffff 45704 /Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphoneos/Reader.build/Objects-normal/armv7/RootViewController.o
+943a601cbcd4e168ecdc77ebafa4945b bec485e708873586bb28173b450975d4 ffffffffffffffffffffffffffffffff 53524 /Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphoneos/Reader.build/Objects-normal/armv7/ReaderAppDelegate.o
+943a601cf1a58a64ecdc77ebafa49344 4d38f86a1caf4a3d16817d22f2325f3f ffffffffffffffffffffffffffffffff 6448 /Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Debug-iphoneos/Reader.build/Objects-normal/armv7/main.o
+0000000001c2dd4b0000000000000524 943a601cf1d77ec0ecdc77ebafa49da3 ffffffffffffffffffffffffffffffff 10446552 /var/folders/q5/q5yrAwxFHKObSRQfGpAGAk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Reader_Prefix-cllkqbcfidauydfdqsinzqrcaqcn/Reader_Prefix.pch.gch
