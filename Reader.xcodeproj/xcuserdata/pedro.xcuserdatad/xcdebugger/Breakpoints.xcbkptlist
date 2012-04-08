@@ -7,42 +7,26 @@
          shouldBeEnabled = "No"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
-         isPathRelative = "1"
-         filePath = "Classes/DetailViewController.m"
-         timestampString = "341856645.93451"
+         filePath = "Classes/PropagandaViewController.m"
+         timestampString = "355446744.277275"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "127"
-         endingLineNumber = "127"
-         landmarkName = "-lerPdfEmOutroApp"
+         startingLineNumber = "50"
+         endingLineNumber = "50"
+         landmarkName = "-orientar"
          landmarkType = "5">
       </FileBreakpoint>
       <FileBreakpoint
          shouldBeEnabled = "No"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
-         isPathRelative = "1"
-         filePath = "Classes/DetailViewController.m"
-         timestampString = "341857231.953696"
+         filePath = "Classes/PropagandaViewController.m"
+         timestampString = "355446744.277275"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "188"
-         endingLineNumber = "188"
-         landmarkName = "-documentInteractionControllerDidEndPreview:"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "No"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         isPathRelative = "1"
-         filePath = "Classes/DetailViewController.m"
-         timestampString = "341857235.727857"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "128"
-         endingLineNumber = "128"
-         landmarkName = "-lerPdfEmOutroApp"
+         startingLineNumber = "49"
+         endingLineNumber = "49"
+         landmarkName = "-orientar"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>

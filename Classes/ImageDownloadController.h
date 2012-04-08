@@ -18,13 +18,13 @@
     NSMutableArray * fila;
     NSMutableData * dadosRecebidos;
     
-    id <DownloadViewControllerDataSource> delegate;
+    id <DownloadViewControllerDataSource> __unsafe_unretained delegate;
 }
 
-@property (retain) NSMutableArray * fila;
-@property (retain) NSMutableData * dadosRecebidos;
+@property  NSMutableArray * fila;
+@property  NSMutableData * dadosRecebidos;
 
-@property (assign) id <DownloadViewControllerDataSource> delegate;
+@property (unsafe_unretained) id <DownloadViewControllerDataSource> delegate;
 
 
 + (ImageDownloadController *) sharedImageDownloadController;

@@ -18,7 +18,7 @@
     
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
-		[self init];
+		self = [self init];
     }
     return self;
 }
@@ -29,12 +29,10 @@
 	
     recognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeDireita)];
 	[self addGestureRecognizer:recognizer];
-	[recognizer release];
 	
 	recognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeEsquerda)];
 	recognizer.direction = UISwipeGestureRecognizerDirectionLeft;
 	[self addGestureRecognizer:recognizer];
-	[recognizer release];
 	
 	// Variável interna
 	self.estadoSwipe = NO;
@@ -53,17 +51,6 @@
     // Configure the view for the selected state.
 }
 
-- (void)dealloc {
-    [view release];
-	[titulo release];
-	[destaques release];
-	[imagem release];
-    [porcentagemBarra release];
-    [porcentagemTexto release];
-    [info release];
-	[indexPath release];
-    [super dealloc];
-}
 
 #pragma mark -
 #pragma mark Setter / Getter tipo
@@ -80,18 +67,18 @@
 	
 
 	if (tipo == kTipoAzul) {
-		[accessoryViewImage setImage: [[[UIImage alloc] initWithContentsOfFile: 
-											 [[NSBundle mainBundle] pathForResource:@"button blue" ofType:@"png"]] autorelease] 
+		[accessoryViewImage setImage: [[UIImage alloc] initWithContentsOfFile: 
+											 [[NSBundle mainBundle] pathForResource:@"button blue" ofType:@"png"]] 
 												forState:UIControlStateNormal];
-		[iconViewImage setImage: [[[UIImage alloc] initWithContentsOfFile:
-										[[NSBundle mainBundle] pathForResource:@"icon blue add" ofType:@"png"]] autorelease]
+		[iconViewImage setImage: [[UIImage alloc] initWithContentsOfFile:
+										[[NSBundle mainBundle] pathForResource:@"icon blue add" ofType:@"png"]]
 											forState:UIControlStateNormal];
 	} else if (tipo == kTipoVermelho) {
-		[accessoryViewImage setImage: [[[UIImage alloc] initWithContentsOfFile: 
-											[[NSBundle mainBundle] pathForResource:@"button red" ofType:@"png"]] autorelease]
+		[accessoryViewImage setImage: [[UIImage alloc] initWithContentsOfFile: 
+											[[NSBundle mainBundle] pathForResource:@"button red" ofType:@"png"]]
 												forState:UIControlStateNormal];
-		[iconViewImage setImage: [[[UIImage alloc] initWithContentsOfFile: 
-									   [[NSBundle mainBundle] pathForResource:@"icon red remove" ofType:@"png"]] autorelease] 
+		[iconViewImage setImage: [[UIImage alloc] initWithContentsOfFile: 
+									   [[NSBundle mainBundle] pathForResource:@"icon red remove" ofType:@"png"]] 
 											forState:UIControlStateNormal];
 	}
 }

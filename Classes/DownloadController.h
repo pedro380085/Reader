@@ -21,13 +21,13 @@
     NSMutableData * dadosRecebidos;
     BOOL baixando;
     
-    RootViewController *delegate;
+    RootViewController *__weak delegate;
 }
 
-@property (retain) NSMutableArray * fila;
-@property (retain) NSMutableData * dadosRecebidos;
+@property  NSMutableArray * fila;
+@property  NSMutableData * dadosRecebidos;
 
-@property (assign) RootViewController *delegate;
+@property (weak) RootViewController *delegate;
 
 
 + (DownloadController *) sharedDownloadController;

@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @class CustomCell;
+@class PropagandaViewController;
 
 @protocol DownloadViewControllerDataSource <NSObject>
 
@@ -19,5 +20,13 @@
 @protocol RootViewControllerDelegate <NSObject>
 
 - (void) removerArquivo: (NSString *) arquivo comCelula: (CustomCell *)celula;
+
+@end
+
+@protocol PropagandaViewControllerDelegate <NSObject>
+
+- (void)propagandaApresentada:(PropagandaViewController *)pvc;
+- (UIInterfaceOrientation)interfaceOrientation;
+
 
 @end

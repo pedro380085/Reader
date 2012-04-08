@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
-	<string>Portuguese</string>
+	<string>en_US</string>
 	<key>CFBundleDisplayName</key>
 	<string>ABO</string>
 	<key>CFBundleExecutable</key>
@@ -26,8 +26,10 @@
 	<string>1.2</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
-	<key>NSMainNibFile</key>
+	<key>NSMainNibFile~ipad</key>
 	<string>MainWindow</string>
+	<key>NSMainNibFile~iphone</key>
+	<string>MainWindow_iPhone</string>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>

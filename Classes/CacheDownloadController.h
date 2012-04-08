@@ -22,13 +22,13 @@
     NSDictionary *cacheInfo;
     BOOL baixando;
     
-    RootViewController *delegate;
+    RootViewController *__weak delegate;
 }
 
-@property (retain, nonatomic) NSMutableData *dadosRecebidos;
-@property (retain, nonatomic) NSDictionary *cacheInfo;
+@property (nonatomic) NSMutableData *dadosRecebidos;
+@property (nonatomic) NSDictionary *cacheInfo;
 
-@property (assign) RootViewController *delegate;
+@property (weak) RootViewController *delegate;
 
 + (CacheDownloadController *) sharedCacheDownloadController;
 

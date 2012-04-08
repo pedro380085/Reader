@@ -29,12 +29,6 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(CacheDownloadController);
     return self;
 }
 
-- (void) dealloc {
-    [dadosRecebidos release];
-    [cacheInfo release];
-    
-    [super dealloc];
-}
 
 
 #pragma mark -
@@ -43,7 +37,7 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(CacheDownloadController);
 
 - (void) definirTipoCache: (NSString *)tipo {
     if (tipo == CACHE_PADRAO) {
-        cacheInfo = [[NSDictionary dictionaryWithObjectsAndKeys:CACHE_PADRAO_URL, DOWNLOAD_URL, CACHE_PADRAO_ARQUIVO, DOWNLOAD_ARQUIVO, CACHE_PADRAO_PLIST, DOWNLOAD_PLIST_PADRAO, CACHE_BANNER_PLIST, DOWNLOAD_PLIST_BANNER, nil] retain];
+        cacheInfo = [NSDictionary dictionaryWithObjectsAndKeys:CACHE_PADRAO_URL, DOWNLOAD_URL, CACHE_PADRAO_ARQUIVO, DOWNLOAD_ARQUIVO, CACHE_PADRAO_PLIST, DOWNLOAD_PLIST_PADRAO, CACHE_BANNER_PLIST, DOWNLOAD_PLIST_BANNER, nil];
     } 
 }
 
@@ -80,7 +74,7 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(CacheDownloadController);
     if (theConnection) {
         // Atualiza a flag informando que algum download está sendo efetuado
         baixando = YES;
-        dadosRecebidos = [[NSMutableData data] retain];
+        dadosRecebidos = [NSMutableData data];
     }
     
 }
@@ -120,7 +114,6 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(CacheDownloadController);
                 
                 [vetorPadrao addObject:dic];
                 
-                [dic release];
             }
             
             [vetorPadrao writeToFile:[[NSHomeDirectory() stringByAppendingPathComponent:  @"Documents"]
@@ -138,7 +131,6 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(CacheDownloadController);
                 
                 [vetorBanners addObject:dic];
                 
-                [dic release];
             }
             
             [vetorBanners writeToFile:[[NSHomeDirectory() stringByAppendingPathComponent:  @"Documents"]
@@ -146,8 +138,6 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(CacheDownloadController);
             
             [[ImageDownloadController sharedImageDownloadController] atualizarImagens:[NSMutableArray arrayWithObjects:vetorPadrao, vetorBanners, nil] comDelegate:delegate];
             
-            [vetorPadrao release];
-            [vetorBanners release];
             
         } else {
             [self atualizarCache];
@@ -160,7 +150,7 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(CacheDownloadController);
 
 - (void)restaurarInterface {
     delegate.detailViewController.cacheButton.style = UIBarButtonItemStyleBordered;
-    delegate.detailViewController.cacheButton.title = @"Atualizar cache";
+    delegate.detailViewController.cacheButton.title = NSLocalizedString(@"Atualizar dados", nil);
 }
 
 
@@ -179,17 +169,15 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(CacheDownloadController);
 
     // Atualiza interface
     delegate.detailViewController.cacheButton.style = UIBarButtonItemStyleDone;
-    delegate.detailViewController.cacheButton.title = @"Atualizando ...";
+    delegate.detailViewController.cacheButton.title = NSLocalizedString(@"Atualizando ...", nil);
 }
 
 - (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error
 {
     // Libera os objetos
-    [connection release];
-    [dadosRecebidos release];
     
     // Atualiza interface
-    delegate.detailViewController.cacheButton.title = @"Atualização falhou!";
+    delegate.detailViewController.cacheButton.title = NSLocalizedString(@"Atualização falhou!", nil);
     [self performSelector:@selector(restaurarInterface) withObject:nil afterDelay:1.0];
     
     // Atualiza a flag pois o download falhou
@@ -204,11 +192,9 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(CacheDownloadController);
 	[dadosRecebidos writeToFile:caminho atomically:YES];
 	
     // Libera os objetos
-    [connection release];
-    [dadosRecebidos release];
     
     // Atualiza interface
-    delegate.detailViewController.cacheButton.title = @"Atualizado!";
+    delegate.detailViewController.cacheButton.title = NSLocalizedString(@"Atualizado!", nil);
     [self performSelector:@selector(restaurarInterface) withObject:nil afterDelay:1.0];
     
     // Verifica a integridade do cache

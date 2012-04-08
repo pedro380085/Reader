@@ -8,19 +8,21 @@
 
 #import <UIKit/UIKit.h>
 #import "Protocolos.h"
+#import "PropagandaViewController.h"
 
 @class DetailViewController;
+@class PropagandaViewController;
 
-@interface RootViewController : UITableViewController <RootViewControllerDelegate, DownloadViewControllerDataSource> {
-    DetailViewController *detailViewController;
+@interface RootViewController : UITableViewController <RootViewControllerDelegate, DownloadViewControllerDataSource, PropagandaViewControllerDelegate> {
     NSMutableArray *cache;
     
     BOOL tabelaModoEdicao;
 }
 
-@property (nonatomic, retain) IBOutlet DetailViewController *detailViewController;
-@property (nonatomic, retain) NSMutableArray *cache;
+@property (nonatomic) NSMutableArray *cache;
+@property (nonatomic, strong) DetailViewController *detailViewController;
 
+- (IBAction) sobre;
 - (void) carregarCache;
 
 @end

@@ -41,6 +41,20 @@
 - (void)viewWillAppear:(BOOL)animated {
     int aleatorio = arc4random() % [nomesBanners count];
     [banner setImage:[UIImage imageNamed:[nomesBanners objectAtIndex:aleatorio]]];
+    
+    [self.view setNeedsDisplay];
+}
+
+
+- (void)orientar {
+    //UIInterfaceOrientation u = self.interfaceOrientation;
+    if (!UIInterfaceOrientationIsLandscape([delegate interfaceOrientation])) {
+        self.view.transform = CGAffineTransformMakeRotation(-M_PI_2);
+    } else {
+        self.view.transform = CGAffineTransformIdentity;
+    }
+    
+    [self.view setFrame:CGRectMake(0.0, 0.0, self.view.frame.size.width, self.view.frame.size.height)];
 }
 
 #pragma mark -
@@ -48,7 +62,7 @@
 
 // Ensure that the view controller supports rotation and that the split view can therefore show in both portrait and landscape.
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-    return NO;
+    return YES;
 }
 
 #pragma mark -
@@ -62,16 +76,13 @@
 }
 
 
-- (void)dealloc {
-    [nomesBanners release];
-    [super dealloc];
-}
 
 #pragma mark -
 #pragma mark User Methods
 
 - (void)atualizarBanner {
-    [delegate propagandaApresentada];
+    [[NSNotificationCenter defaultCenter] postNotificationName:PropagandaApresentadaNotification object:nil];
+    [delegate propagandaApresentada:self];
 }
 
 - (void)iniciarTimer {

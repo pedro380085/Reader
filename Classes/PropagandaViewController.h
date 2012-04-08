@@ -10,19 +10,22 @@
 #import "Constantes.h"
 #import "Protocolos.h"
 #import "SynthesizeSingleton.h"
-#import "DetailViewController.h"
+#import "RootViewController.h"
+
+@class RootViewController;
 
 @interface PropagandaViewController : UIViewController {
     IBOutlet UIImageView *banner;
     NSArray *nomesBanners;
-    NSTimer *timer;
-    DetailViewController *delegate;
+    NSTimer *__weak timer;
+    id <PropagandaViewControllerDelegate> __weak delegate;
 }
 
-@property (nonatomic, retain) NSArray *nomesBanners;
-@property (nonatomic, assign) NSTimer *timer;
-@property (assign) DetailViewController *delegate;
+@property (nonatomic) NSArray *nomesBanners;
+@property (nonatomic, weak) NSTimer *timer;
+@property (weak) id <PropagandaViewControllerDelegate> delegate;
 
+- (void)orientar;
 - (void)atualizarBanner;
 - (void)iniciarTimer;
 - (void)invalidarTimer;

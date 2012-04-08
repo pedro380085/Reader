@@ -23,17 +23,11 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(DownloadController);
 
 - (id) init {
     
-    fila = [[NSMutableArray arrayWithCapacity:1] retain];  
+    fila = [NSMutableArray arrayWithCapacity:1];  
     
     return self;
 }
 
-- (void) dealloc {
-    [fila release];
-    [dadosRecebidos release];
-    
-    [super dealloc];
-}
 
 #pragma mark -
 #pragma mark User Methods
@@ -63,9 +57,8 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(DownloadController);
     
     [fila insertObject:dic atIndex:0];
     
-    [dic release];
     
-    [self atualizarInterfaceComProgresso:0.0 comTexto:@"Aguardando término do download"  comPath:path];
+    [self atualizarInterfaceComProgresso:0.0 comTexto:NSLocalizedString(@"Aguardando término do download", nil)  comPath:path];
     
     // Depois que a URL foi adicionada, podemos iniciar o download
     [self iniciarDownload];
@@ -96,13 +89,13 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(DownloadController);
 		if (theConnection) {
 			// Atualiza a flag informando que algum download está sendo efetuado e retém os dados
 			baixando = YES;
-			dadosRecebidos = [[NSMutableData data] retain];
+			dadosRecebidos = [NSMutableData data];
             
-            [self atualizarInterfaceComProgresso:0.0 comTexto:@"Conexão iniciada" comPath:nil];
+            [self atualizarInterfaceComProgresso:0.0 comTexto:NSLocalizedString(@"Conexão iniciada", nil) comPath:nil];
 		} else {
             // Atualiza interface
             CustomCell * celula = (CustomCell *)[delegate.tableView cellForRowAtIndexPath:[[fila lastObject] objectForKey:DOWNLOAD_PATH]];
-            celula.porcentagemTexto.text = @"Conexão falhou!";
+            celula.porcentagemTexto.text = NSLocalizedString(@"Conexão falhou!", nil);
             [self performSelector:@selector(restaurarInterface) withObject:nil afterDelay:0.4];
         }
 	} else {
@@ -142,7 +135,7 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(DownloadController);
     for (int i=0; i<[fila count]; i++) {
         if ([path compare:[[fila objectAtIndex:i] objectForKey:DOWNLOAD_PATH]] == NSOrderedSame) {
             if (i+1 != [fila count]) {
-                [self atualizarInterfaceComProgresso:0.0 comTexto:@"Aguardando término do download"  comCelula:celula];
+                [self atualizarInterfaceComProgresso:0.0 comTexto:NSLocalizedString(@"Aguardando término do download", nil)  comCelula:celula];
             } else {
                 [self atualizarInterfaceComProgresso:((float)[dadosRecebidos length] / (float)[[[fila lastObject] objectForKey:DOWNLOAD_TAMANHO] intValue])
                                             comTexto:[NSString stringWithFormat:@"%d %%", (int) (100 * (float)[dadosRecebidos length] / (float)[[[fila lastObject] objectForKey:DOWNLOAD_TAMANHO] intValue])]
@@ -192,7 +185,7 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(DownloadController);
     
     // Atualiza interface
     CustomCell * celula = (CustomCell *)[delegate.tableView cellForRowAtIndexPath:[[fila lastObject] objectForKey:DOWNLOAD_PATH]];
-    celula.porcentagemTexto.text = @"Download falhou!";
+    celula.porcentagemTexto.text = NSLocalizedString(@"Download falhou!", nil);
     [self performSelector:@selector(restaurarInterface) withObject:nil afterDelay:0.4];
     
     // Atualiza a flag pois o download falhou
@@ -204,11 +197,7 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(DownloadController);
 }
 
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection
-{	
-    // do something with the data
-    // receivedData is declared as a method instance elsewhere
-    NSLog(@"Succeeded! Received %d bytes of data",[dadosRecebidos length]);
-	
+{
 	// Salvando array em arquivo
     NSString * caminho = [[NSHomeDirectory() stringByAppendingPathComponent:  @"Documents"]
                           stringByAppendingPathComponent:[[fila lastObject] objectForKey:DOWNLOAD_ARQUIVO]];
@@ -220,7 +209,7 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(DownloadController);
     
     // Atualiza interface
     CustomCell * celula = (CustomCell *)[delegate.tableView cellForRowAtIndexPath:[[fila lastObject] objectForKey:DOWNLOAD_PATH]];
-    celula.porcentagemTexto.text = @"Download completo!";
+    celula.porcentagemTexto.text = NSLocalizedString(@"Download completo!", nil);
     [self performSelector:@selector(restaurarInterface) withObject:nil afterDelay:0.4];
     [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
     
@@ -263,12 +252,10 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(DownloadController);
 - (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error
 {
     // Libera os objetos
-    [connection release];
-    [dadosRecebidos release];
     
     // Atualiza interface
     CustomCell * celula = (CustomCell *)[delegate.tableView cellForRowAtIndexPath:[[fila lastObject] objectForKey:DOWNLOAD_PATH]];
-    celula.porcentagemTexto.text = @"Download falhou!";
+    celula.porcentagemTexto.text = NSLocalizedString(@"Download falhou!", nil);
     [self performSelector:@selector(restaurarInterface) withObject:nil afterDelay:0.4];
     
     // Atualiza a flag pois o download falhou
@@ -287,12 +274,10 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(DownloadController);
 	[dadosRecebidos writeToFile:caminho atomically:YES];
 	
     // Libera os objetos
-    [connection release];
-    [dadosRecebidos release];
     
     // Atualiza interface
     CustomCell * celula = (CustomCell *)[delegate.tableView cellForRowAtIndexPath:[[fila lastObject] objectForKey:DOWNLOAD_PATH]];
-    celula.porcentagemTexto.text = @"Download completo!";
+    celula.porcentagemTexto.text = NSLocalizedString(@"Download completo!", nil);
     [self restaurarInterface];
     [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
     

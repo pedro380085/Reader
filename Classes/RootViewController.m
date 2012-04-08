@@ -26,9 +26,8 @@
     [super viewDidLoad];
     self.clearsSelectionOnViewWillAppear = NO;
     self.contentSizeForViewInPopover = CGSizeMake(320.0, 600.0);
-	
-	// Autorizando o acesso da classe DetailViewController aos objetos da RootViewController
-	detailViewController.root = self;
+    
+    self.navigationItem.title = NSLocalizedString(@"Edições", nil);
 	
     // Definindo os delegates e atualizando cache
 	[CacheDownloadController sharedCacheDownloadController].delegate = self;
@@ -64,20 +63,16 @@
 }
 
 
-- (void)dealloc {
-    [detailViewController release];
-    [cache release];
-    [super dealloc];
-}
 
 #pragma mark -
 #pragma mark User Methods
 
+- (void)propagandaApresentada:(PropagandaViewController *)pvc {
+    [UIView transitionFromView:pvc.view toView:self.parentViewController.view duration:ANIMACAO_PADRAO*1.5 options:UIViewAnimationOptionTransitionFlipFromLeft completion:NULL];
+}
+
 - (void) novoCacheRecebido {
     [self carregarCache];
-    
-    // Notifica o controlador do banner sobre o novo cache
-    //[[BannerDownloadController sharedBannerDownloadController] novoCacheRecebido];
 }
 
 // Esse método lê o arquivo de cache e atribui 
@@ -106,8 +101,6 @@
         }
     }
     
-    [a release];
-    [localFileManager release];
     
     // Força a tabela a ser atualizada com os novos dados
 	[self.tableView reloadData];
@@ -126,7 +119,6 @@
     
     [self performSelector:@selector(carregarCache) withObject:nil afterDelay:ANIMACAO_PADRAO];
     
-    [localFileManager release];
 }
 
 - (IBAction)botaoEditarPressionado {
@@ -139,6 +131,17 @@
     [[NSNotificationCenter defaultCenter] postNotificationName:EditButtonPushed object:nil userInfo:userInfo];
 }
 
+- (IBAction) sobre {
+	// Informa usuário sobre como modificar as células da tabela
+    UIAlertView *alert = [[UIAlertView alloc] 
+						  initWithTitle:NSLocalizedString(@"Sobre", nil) 
+						  message: NSLocalizedString(@"Sobre Mensagem", @"Aplicativo para leitura das revistas dos Arquivos Brasileiros de Oftamologia (ABO).\n\nDesenvolvedor: Pedro P. M. Góes\n\nVersão atual: 1.2\nRelease: Novembro/2011\n")
+						  delegate:self 
+						  cancelButtonTitle:@"Ok" 
+						  otherButtonTitles:nil];
+	[alert show];
+}
+
 - (double)calcularAlturaParaIndex:(NSIndexPath *)indexPath {
     // Dicionário com todas as informações para a célula
     NSMutableDictionary * d = [[cache objectAtIndex:[indexPath section]] objectAtIndex:[indexPath row]];
@@ -148,7 +151,6 @@
     [self.view addSubview:v];
     double altura = v.contentSize.height;
     [v removeFromSuperview];
-    [v release];
     
     return altura;
 }
@@ -156,19 +158,7 @@
 #pragma mark -
 #pragma mark Table view data source
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)aTableView {
-    /*
-     int sections = 0;
-     
-     for (int i=0; i<2; i++) {
-     if ([[cache objectAtIndex:i] count] > 0) {
-     sections++;
-     }
-     }
-     
-     return sections;
-     */
-    
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)aTableView {    
     return 2;
 }
 
@@ -186,15 +176,12 @@
 	
 	static NSString * CustomCellIdentifier = @"CustomCellIdentifier";
     CustomCell * celula = (CustomCell *)[tableView dequeueReusableCellWithIdentifier: CustomCellIdentifier];
-	//CustomCell * cell = (CustomCell *)[tableView dequeueReusableCellWithIdentifier: [NSString stringWithFormat:@"%d", [[d objectForKey:CACHE_ID] integerValue]]];
-    //CustomCell * cell = nil;
     
 	if (celula == nil) {
 		NSArray * nib = [[NSBundle mainBundle] loadNibNamed:@"CustomCell" owner:self options:nil];
 		for (id oneObject in nib) {
 			if ([oneObject isKindOfClass:[CustomCell class]]) {
-				celula = (CustomCell *)oneObject;
-				[celula init];
+				celula = [(CustomCell *)oneObject init];
 			}
 		}
 	}
@@ -229,9 +216,11 @@
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
-	NSArray * v = [[NSArray alloc] initWithObjects:@"Arquivos no iPad", @"Arquivos no servidor", nil];
+	NSArray * v = [[NSArray alloc] initWithObjects:
+                   NSLocalizedString(@"Arquivos no iPad", nil),
+                   NSLocalizedString(@"Arquivos no servidor", nil),
+                   nil];
 	NSString * key = [v objectAtIndex:section];
-	[v release];
 	return key;
 }
 
@@ -251,23 +240,39 @@
 
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
     // Somente apresenta o pdf se o arquivo já estiver sido baixado
     if (indexPath.section == 0) {
-        [detailViewController apresentarPdf:[[NSHomeDirectory() stringByAppendingPathComponent: @"Documents"] stringByAppendingPathComponent: [[[self.cache objectAtIndex:indexPath.section] objectAtIndex:indexPath.row] objectForKey:CACHE_ARQUIVO]]];
+        
+        if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
+            if (!self.detailViewController) {
+                self.detailViewController = [[DetailViewController alloc] initWithNibName:@"DetailViewController_iPhone" bundle:nil];
+            }
+            [detailViewController apresentarPdf:[[NSHomeDirectory() stringByAppendingPathComponent: @"Documents"] stringByAppendingPathComponent: [[[self.cache objectAtIndex:indexPath.section] objectAtIndex:indexPath.row] objectForKey:CACHE_ARQUIVO]]];
+            
+            [self.navigationController pushViewController:self.detailViewController animated:YES];
+        } else {
+            if (!self.detailViewController) {
+                // Receives the detailViewController -- Shouldn't be doing that / dangerous
+                self.detailViewController = (DetailViewController *)self.splitViewController.delegate;
+            }
+            [detailViewController apresentarPdf:[[NSHomeDirectory() stringByAppendingPathComponent: @"Documents"] stringByAppendingPathComponent: [[[self.cache objectAtIndex:indexPath.section] objectAtIndex:indexPath.row] objectForKey:CACHE_ARQUIVO]]];
+        }
+
     } else {
 
         
         
         UIAlertView *alert = [[UIAlertView alloc] 
                               initWithTitle:@"Download" 
-                              message: @"Para ler a revista, deslize o dedo sobre a célula e confirme o download."
+                              message: NSLocalizedString(@"Download Mensagem", @"Para ler a revista, deslize o dedo sobre a célula e confirme o download.")
                               delegate:self 
                               cancelButtonTitle:@"Ok" 
                               otherButtonTitles:nil];
         [alert show];
-        [alert release];
          
     }/*else {
+      // Opção para fazer download da revista
         DownloadController * downloadController = [DownloadController sharedDownloadController];
         NSMutableDictionary *info = [[cache objectAtIndex:indexPath.section] objectAtIndex:indexPath.row];
         [downloadController adicionarURL:[URL_ARQUIVO stringByAppendingFormat: [info objectForKey:CACHE_ARQUIVO], nil] salvandoComo:[info objectForKey:CACHE_ARQUIVO] comCelula:(CustomCell *)[tableView cellForRowAtIndexPath:indexPath] comTamanho:[[info objectForKey:CACHE_TAMANHO] intValue] comCache:NO];

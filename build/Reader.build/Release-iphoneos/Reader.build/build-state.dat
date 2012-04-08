@@ -1,606 +1,0 @@
-TReader
-v7
-r0
-t321880904.112238
-cCheck dependencies
-cCpResource build/Release-iphoneos/Reader.app/ResourceRules.plist /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist
-cProcessInfoPlistFile /Users/pedro/Documents/Objective-C/Reader/build/Release-iphoneos/Reader.app/Info.plist Reader-Info.plist
-cCompileXIB /Users/pedro/Documents/Objective-C/Reader/MainWindow.xib
-cCompileXIB /Users/pedro/Documents/Objective-C/Reader/DetailView.xib
-cCopyPNGFile /Users/pedro/Documents/Objective-C/Reader/build/Release-iphoneos/Reader.app/ABO@72.png ABO@72.png
-cProcessPCH /var/folders/q5/q5yrAwxFHKObSRQfGpAGAk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Reader_Prefix-cegkcilnoqovofdhnngxbmxaowwc/Reader_Prefix.pch.gch Reader_Prefix.pch normal armv7 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/Reader.build/Release-iphoneos/Reader.build/Objects-normal/armv7/main.o /Users/pedro/Documents/Objective-C/Reader/main.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/Reader.build/Release-iphoneos/Reader.build/Objects-normal/armv7/ReaderAppDelegate.o /Users/pedro/Documents/Objective-C/Reader/Classes/ReaderAppDelegate.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/Reader.build/Release-iphoneos/Reader.build/Objects-normal/armv7/RootViewController.o /Users/pedro/Documents/Objective-C/Reader/Classes/RootViewController.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/Reader.build/Release-iphoneos/Reader.build/Objects-normal/armv7/DetailViewController.o /Users/pedro/Documents/Objective-C/Reader/Classes/DetailViewController.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-cLd /Users/pedro/Documents/Objective-C/Reader/build/Release-iphoneos/Reader.app/Reader normal armv7
-cGenerateDSYMFile /Users/pedro/Documents/Objective-C/Reader/build/Release-iphoneos/Reader.app.dSYM /Users/pedro/Documents/Objective-C/Reader/build/Release-iphoneos/Reader.app/Reader
-cProcessProductPackaging "/Users/pedro/Library/MobileDevice/Provisioning Profiles/ECA16DCC-C78E-4A3D-8B3B-CF8049E4DFB5.mobileprovision" /Users/pedro/Documents/Objective-C/Reader/build/Release-iphoneos/Reader.app/embedded.mobileprovision
-cTouch /Users/pedro/Documents/Objective-C/Reader/build/Release-iphoneos/Reader.app
-cProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/Entitlements.plist /Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Release-iphoneos/Reader.build/Reader.xcent
-cCodeSign /Users/pedro/Documents/Objective-C/Reader/build/Release-iphoneos/Reader.app
-cValidate /Users/pedro/Documents/Objective-C/Reader/build/Release-iphoneos/Reader.app
-
-N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk
-c000000004CC7DC9E0000000000000110
-t1288166558
-s272
-
-N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/Entitlements.plist
-c000000004CB3DFCF00000000000001A7
-t1286856655
-s423
-
-N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist
-c000000004CB3DFCF00000000000001E5
-t1286856655
-s485
-
-N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-c000000004CC10EF500000000003532B0
-t1287720693
-s3486384
-
-N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/Foundation.framework/Foundation
-c000000004CC10F4700000000003E1F20
-t1287720775
-s4071200
-
-N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
-c000000004CC10F1C0000000000001466
-t1287720732
-s5222
-
-N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
-c000000004CC11AE60000000000000AA1
-t1287723750
-s2721
-
-N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/UIKit.framework/UIKit
-c000000004CC11B750000000000C769F0
-t1287723893
-s13068784
-
-N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/usr/include/Availability.h
-c000000004CB3FBB80000000000001ADD
-t1286863800
-s6877
-
-N/Developer4.2/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk
-c000000004CC7DC9E0000000000000110
-t1288166558
-s272
-
-N/Developer4.2/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/Entitlements.plist
-c000000004CB3DFCF00000000000001A7
-t1286856655
-s423
-
-N/Developer4.2/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist
-c000000004CB3DFCF00000000000001E5
-t1286856655
-s485
-
-N/Developer4.2/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-c000000004CC10EF500000000003532B0
-t1287720693
-s3486384
-
-N/Developer4.2/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/Foundation.framework/Foundation
-c000000004CC10F4700000000003E1F20
-t1287720775
-s4071200
-
-N/Developer4.2/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
-c000000004CC10F1C0000000000001466
-t1287720732
-s5222
-
-N/Developer4.2/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
-c000000004CC11AE60000000000000AA1
-t1287723750
-s2721
-
-N/Developer4.2/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/UIKit.framework/UIKit
-c000000004CC11B750000000000C769F0
-t1287723893
-s13068784
-
-N/Developer4.2/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/usr/include/Availability.h
-c000000004CB3FBB80000000000001ADD
-t1286863800
-s6877
-
-N/Users/pedro/Documents/Objective-C/Reader/ABO@72.png
-c000000004D7F364A0000000000001662
-t1300182602
-s5730
-
-N/Users/pedro/Documents/Objective-C/Reader/Classes/DetailViewController.h
-c000000004D79E74E00000000000006B1
-t1299834702
-s1713
-i<UIKit/UIKit.h>
-
-N/Users/pedro/Documents/Objective-C/Reader/Classes/DetailViewController.m
-c000000004D88A54D0000000000002C5A
-t1300800845
-s11354
-i"DetailViewController.h"
-i"RootViewController.h"
-
-N/Users/pedro/Documents/Objective-C/Reader/Classes/DownloadController.h
-c000000004D74062000000000000001E1
-t1299449376
-s481
-i<Foundation/Foundation.h>
-
-N/Users/pedro/Documents/Objective-C/Reader/Classes/DownloadController.m
-c000000004D740CFB0000000000000ADC
-t1299451131
-s2780
-i"DownloadController.h"
-
-N/Users/pedro/Documents/Objective-C/Reader/Classes/ReaderAppDelegate.h
-c000000004D7133090000000000000308
-t1299264265
-s776
-i<UIKit/UIKit.h>
-
-N/Users/pedro/Documents/Objective-C/Reader/Classes/ReaderAppDelegate.m
-c000000004D71330900000000000007C1
-t1299264265
-s1985
-i"ReaderAppDelegate.h"
-i"RootViewController.h"
-i"DetailViewController.h"
-
-N/Users/pedro/Documents/Objective-C/Reader/Classes/RootViewController.h
-c000000004D77909100000000000001F6
-t1299681425
-s502
-i<UIKit/UIKit.h>
-
-N/Users/pedro/Documents/Objective-C/Reader/Classes/RootViewController.m
-c000000004D88A5C1000000000000191A
-t1300800961
-s6426
-i"RootViewController.h"
-i"DetailViewController.h"
-
-N/Users/pedro/Documents/Objective-C/Reader/DetailView.xib
-c000000004D7F36690000000000008A82
-t1300182633
-s35458
-
-N/Users/pedro/Documents/Objective-C/Reader/MainWindow.xib
-c000000004D7166270000000000007062
-t1299277351
-s28770
-
-N/Users/pedro/Documents/Objective-C/Reader/Reader_Prefix.pch
-c000000004D713309000000000000013E
-t1299264265
-s318
-i<Availability.h>
-i<Foundation/Foundation.h>
-i<UIKit/UIKit.h>
-
-N/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Release-iphoneos/Reader.build/Objects-normal/armv7/DetailViewController.o
-t1300187814
-s81592
-
-N/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Release-iphoneos/Reader.build/Objects-normal/armv7/DownloadController.o
-t1300186143
-s15400
-
-N/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Release-iphoneos/Reader.build/Objects-normal/armv7/Reader.LinkFileList
-c000000004D7F48760000000000000207
-t1300187254
-s519
-
-N/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Release-iphoneos/Reader.build/Objects-normal/armv7/ReaderAppDelegate.o
-t1300186143
-s53876
-
-N/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Release-iphoneos/Reader.build/Objects-normal/armv7/RootViewController.o
-t1300186143
-s51444
-
-N/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Release-iphoneos/Reader.build/Objects-normal/armv7/main.o
-t1300186143
-s6496
-
-N/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Release-iphoneos/Reader.build/Reader.xcent
-t1300188103
-s417
-
-N/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Release-iphoneos/Reader.build/StaticAnalyzer/normal/armv7/DetailViewController.plist
-t1300187439
-s276
-
-N/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Release-iphoneos/Reader.build/StaticAnalyzer/normal/armv7/DownloadController.plist
-t1300187118
-s13739
-
-N/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Release-iphoneos/Reader.build/StaticAnalyzer/normal/armv7/ReaderAppDelegate.plist
-t1300187118
-s276
-
-N/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Release-iphoneos/Reader.build/StaticAnalyzer/normal/armv7/RootViewController.plist
-t1300187118
-s276
-
-N/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Release-iphoneos/Reader.build/StaticAnalyzer/normal/armv7/main.plist
-t1300187118
-s276
-
-N/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Release-iphoneos/Reader.build/com.apple.build-tools.platform.validate
-t2
-s0
-
-N/Users/pedro/Documents/Objective-C/Reader/build/Release-iphoneos/Reader.app
-t1300188103
-s408
-
-N/Users/pedro/Documents/Objective-C/Reader/build/Release-iphoneos/Reader.app.dSYM
-t1300187814
-s102
-
-N/Users/pedro/Documents/Objective-C/Reader/build/Release-iphoneos/Reader.app/ABO@72.png
-t1300186141
-s6106
-
-N/Users/pedro/Documents/Objective-C/Reader/build/Release-iphoneos/Reader.app/DetailView.nib
-t1300186141
-s2445
-
-N/Users/pedro/Documents/Objective-C/Reader/build/Release-iphoneos/Reader.app/Info.plist
-t1300186135
-s1010
-
-N/Users/pedro/Documents/Objective-C/Reader/build/Release-iphoneos/Reader.app/MainWindow.nib
-t1300186139
-s1933
-
-N/Users/pedro/Documents/Objective-C/Reader/build/Release-iphoneos/Reader.app/PkgInfo
-t1300186135
-s8
-
-N/Users/pedro/Documents/Objective-C/Reader/build/Release-iphoneos/Reader.app/Reader
-t1300187814
-s48336
-
-N/Users/pedro/Documents/Objective-C/Reader/build/Release-iphoneos/Reader.app/ResourceRules.plist
-t1300186135
-s485
-
-N/Users/pedro/Documents/Objective-C/Reader/build/Release-iphoneos/Reader.app/embedded.mobileprovision
-t1300188103
-s7048
-
-N/Users/pedro/Documents/Objective-C/Reader/main.m
-c000000004D7133090000000000000162
-t1299264265
-s354
-i<UIKit/UIKit.h>
-
-N/Users/pedro/Library/MobileDevice/Provisioning Profiles/8F278DC3-2B70-420E-BB27-E5DBFDEB8273.mobileprovision
-c000000004D1D4EC60000000000001E66
-t1293766342
-s7782
-
-N/Users/pedro/Library/MobileDevice/Provisioning Profiles/ECA16DCC-C78E-4A3D-8B3B-CF8049E4DFB5.mobileprovision
-c000000004D0D07620000000000001B88
-t1292699490
-s7048
-
-N/var/folders/q5/q5yrAwxFHKObSRQfGpAGAk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Reader_Prefix-ajmfbvhzfxjfapcfvtvedgxkodgn/Reader_Prefix.pch.gch
-t1300184088
-s10249944
-
-N/var/folders/q5/q5yrAwxFHKObSRQfGpAGAk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Reader_Prefix-cegkcilnoqovofdhnngxbmxaowwc/Reader_Prefix.pch.gch
-t1300186143
-s10249944
-
-N/var/folders/q5/q5yrAwxFHKObSRQfGpAGAk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Reader_Prefix-dlcfxlsimudhanfmvpjwosoxgbjw/Reader_Prefix.pch.pth
-t1300187117
-s2748800
-
-NReader-Info.plist
-c000000004D7F39BE0000000000000483
-t1300183486
-s1155
-
-CAnalyze /Users/pedro/Documents/Objective-C/Reader/Classes/DetailViewController.m
-s321880239.549515
-e321880239.621392
-r1
-xAnalyze
-x/Users/pedro/Documents/Objective-C/Reader/Classes/DetailViewController.m
-lSLF07#2@80"Analyze /Users/pedro/Documents/Objective-C/Reader/Classes/DetailViewController.m321880239#321880239#0(0"0(0#0#72"/Users/pedro/Documents/Objective-C/Reader/Classes/DetailViewController.m8631175168#1848"    cd /Users/pedro/Documents/Objective-C/Reader    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fasm-blocks -gdwarf-2 -fvisibility=hidden -mthumb -miphoneos-version-min=4.2 -iquote /Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Release-iphoneos/Reader.build/Reader-generated-files.hmap -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Release-iphoneos/Reader.build/Reader-own-target-headers.hmap -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Release-iphoneos/Reader.build/Reader-all-target-headers.hmap -iquote /Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Release-iphoneos/Reader.build/Reader-project-headers.hmap -F/Users/pedro/Documents/Objective-C/Reader/build/Release-iphoneos -I/Users/pedro/Documents/Objective-C/Reader/build/Release-iphoneos/include -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Release-iphoneos/Reader.build/DerivedSources/armv7 -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Release-iphoneos/Reader.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/q5/q5yrAwxFHKObSRQfGpAGAk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Reader_Prefix-dlcfxlsimudhanfmvpjwosoxgbjw/Reader_Prefix.pch --analyze /Users/pedro/Documents/Objective-C/Reader/Classes/DetailViewController.m -o /Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Release-iphoneos/Reader.build/StaticAnalyzer/normal/armv7/DetailViewController.plist0#
-
-CAnalyze /Users/pedro/Documents/Objective-C/Reader/Classes/DownloadController.m
-s321879918.504998
-e321879918.682485
-r1
-xAnalyze
-x/Users/pedro/Documents/Objective-C/Reader/Classes/DownloadController.m
-o/Users/pedro/Documents/Objective-C/Reader/Classes/DownloadController.m:18:30: warning: Potential leak of an object allocated on line 18 and stored into 'down'
-o         DownloadController * down = [DownloadController alloc];
-o                                     ^
-o/Users/pedro/Documents/Objective-C/Reader/Classes/DownloadController.m:27:36: warning: Potential leak of an object allocated on line 27 and stored into 'theConnection'
-o         NSURLConnection * theConnection = [[NSURLConnection alloc] initWithRequest:theRequest delegate:down];
-o                                           ^
-o2 warnings generated.
-lSLF07#2@78"Analyze /Users/pedro/Documents/Objective-C/Reader/Classes/DownloadController.m321879918#321879918#0(609"/Users/pedro/Documents/Objective-C/Reader/Classes/DownloadController.m:18:30: warning: Potential leak of an object allocated on line 18 and stored into 'down'         DownloadController * down = [DownloadController alloc];                                     ^/Users/pedro/Documents/Objective-C/Reader/Classes/DownloadController.m:27:36: warning: Potential leak of an object allocated on line 27 and stored into 'theConnection'         NSURLConnection * theConnection = [[NSURLConnection alloc] initWithRequest:theRequest delegate:down];                                           ^2 warnings generated.2(0@80"Potential leak of an object allocated on line 27 and stored into 'theConnection'321879918#18446744073709551615#0#6(17@0"321879918#18446744073709551615#0#0(6@70"/Users/pedro/Documents/Objective-C/Reader/Classes/DownloadController.m321143931#0#0#0#0#0"0(6@70"/Users/pedro/Documents/Objective-C/Reader/Classes/DownloadController.m321143931#0#0#0#0#1(3@6@70"/Users/pedro/Documents/Objective-C/Reader/Classes/DownloadController.m321143931#18#2#18#2#6@70"/Users/pedro/Documents/Objective-C/Reader/Classes/DownloadController.m321143931#27#2#27#2#17@0"321879918#18446744073709551615#0#0(6@70"/Users/pedro/Documents/Objective-C/Reader/Classes/DownloadController.m321143931#0#0#0#0#0"0(6@70"/Users/pedro/Documents/Objective-C/Reader/Classes/DownloadController.m321143931#0#0#0#0#1(3@6@70"/Users/pedro/Documents/Objective-C/Reader/Classes/DownloadController.m321143931#27#2#27#2#6@70"/Users/pedro/Documents/Objective-C/Reader/Classes/DownloadController.m321143931#27#36#27#101#21@78"Method returns an Objective-C object with a +1 retain count (owning reference)321879918#18446744073709551615#0#0(6@70"/Users/pedro/Documents/Objective-C/Reader/Classes/DownloadController.m321143931#27#36#0#0#0"1(6@70"/Users/pedro/Documents/Objective-C/Reader/Classes/DownloadController.m321143931#27#36#27#101#78"Method returns an Objective-C object with a +1 retain count (owning reference)17@0"321879918#18446744073709551615#0#0(6@70"/Users/pedro/Documents/Objective-C/Reader/Classes/DownloadController.m321143931#0#0#0#0#0"0(6@70"/Users/pedro/Documents/Objective-C/Reader/Classes/DownloadController.m321143931#0#0#0#0#1(3@6@70"/Users/pedro/Documents/Objective-C/Reader/Classes/DownloadController.m321143931#27#36#27#101#6@70"/Users/pedro/Documents/Objective-C/Reader/Classes/DownloadController.m321143931#28#2#28#2#17@0"321879918#18446744073709551615#0#0(6@70"/Users/pedro/Documents/Objective-C/Reader/Classes/DownloadController.m321143931#0#0#0#0#0"0(6@70"/Users/pedro/Documents/Objective-C/Reader/Classes/DownloadController.m321143931#0#0#0#0#1(3@6@70"/Users/pedro/Documents/Objective-C/Reader/Classes/DownloadController.m321143931#28#2#28#2#6@70"/Users/pedro/Documents/Objective-C/Reader/Classes/DownloadController.m321143931#31#3#31#6#21@145"Object allocated on line 27 and stored into 'theConnection' is no longer referenced after this point and has a retain count of +1 (object leaked)321879918#18446744073709551615#0#0(6@70"/Users/pedro/Documents/Objective-C/Reader/Classes/DownloadController.m321143931#31#3#0#0#0"1(6@70"/Users/pedro/Documents/Objective-C/Reader/Classes/DownloadController.m321143931#31#3#31#6#145"Object allocated on line 27 and stored into 'theConnection' is no longer referenced after this point and has a retain count of +1 (object leaked)6@70"/Users/pedro/Documents/Objective-C/Reader/Classes/DownloadController.m321143931#31#3#0#0#36"Memory (Core Foundation/Objective-C)0(4"Leak0@71"Potential leak of an object allocated on line 18 and stored into 'down'321879918#18446744073709551615#0#6(17@0"321879918#18446744073709551615#0#0(6@70"/Users/pedro/Documents/Objective-C/Reader/Classes/DownloadController.m321143931#0#0#0#0#0"0(6@70"/Users/pedro/Documents/Objective-C/Reader/Classes/DownloadController.m321143931#0#0#0#0#1(3@6@70"/Users/pedro/Documents/Objective-C/Reader/Classes/DownloadController.m321143931#18#2#18#2#6@70"/Users/pedro/Documents/Objective-C/Reader/Classes/DownloadController.m321143931#18#30#18#55#21@78"Method returns an Objective-C object with a +1 retain count (owning reference)321879918#18446744073709551615#0#0(6@70"/Users/pedro/Documents/Objective-C/Reader/Classes/DownloadController.m321143931#18#30#0#0#0"1(6@70"/Users/pedro/Documents/Objective-C/Reader/Classes/DownloadController.m321143931#18#30#18#55#78"Method returns an Objective-C object with a +1 retain count (owning reference)17@0"321879918#18446744073709551615#0#0(6@70"/Users/pedro/Documents/Objective-C/Reader/Classes/DownloadController.m321143931#0#0#0#0#0"0(6@70"/Users/pedro/Documents/Objective-C/Reader/Classes/DownloadController.m321143931#0#0#0#0#1(3@6@70"/Users/pedro/Documents/Objective-C/Reader/Classes/DownloadController.m321143931#18#30#18#55#6@70"/Users/pedro/Documents/Objective-C/Reader/Classes/DownloadController.m321143931#28#2#28#2#17@0"321879918#18446744073709551615#0#0(6@70"/Users/pedro/Documents/Objective-C/Reader/Classes/DownloadController.m321143931#0#0#0#0#0"0(6@70"/Users/pedro/Documents/Objective-C/Reader/Classes/DownloadController.m321143931#0#0#0#0#1(3@6@70"/Users/pedro/Documents/Objective-C/Reader/Classes/DownloadController.m321143931#28#2#28#2#6@70"/Users/pedro/Documents/Objective-C/Reader/Classes/DownloadController.m321143931#36#2#36#7#21@92"Object returned to caller as an owning reference (single retain count transferred to caller)321879918#18446744073709551615#0#0(6@70"/Users/pedro/Documents/Objective-C/Reader/Classes/DownloadController.m321143931#36#2#0#0#0"2(6@70"/Users/pedro/Documents/Objective-C/Reader/Classes/DownloadController.m321143931#36#2#36#12#6@70"/Users/pedro/Documents/Objective-C/Reader/Classes/DownloadController.m321143931#36#9#36#12#92"Object returned to caller as an owning reference (single retain count transferred to caller)21@292"Object allocated on line 18 and stored into 'down' is returned from a method whose name ('iniciarDownload:salvandoEm:') does not contain 'copy' or otherwise starts with 'new' or 'alloc'.  This violates the naming convention rules given in the Memory Management Guide for Cocoa (object leaked)321879918#18446744073709551615#0#0(6@70"/Users/pedro/Documents/Objective-C/Reader/Classes/DownloadController.m321143931#36#2#0#0#0"1(6@70"/Users/pedro/Documents/Objective-C/Reader/Classes/DownloadController.m321143931#36#2#36#7#292"Object allocated on line 18 and stored into 'down' is returned from a method whose name ('iniciarDownload:salvandoEm:') does not contain 'copy' or otherwise starts with 'new' or 'alloc'.  This violates the naming convention rules given in the Memory Management Guide for Cocoa (object leaked)6@70"/Users/pedro/Documents/Objective-C/Reader/Classes/DownloadController.m321143931#36#2#0#0#36"Memory (Core Foundation/Objective-C)0(23"Leak of returned object0#0#70"/Users/pedro/Documents/Objective-C/Reader/Classes/DownloadController.m8620301696#1844"    cd /Users/pedro/Documents/Objective-C/Reader    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fasm-blocks -gdwarf-2 -fvisibility=hidden -mthumb -miphoneos-version-min=4.2 -iquote /Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Release-iphoneos/Reader.build/Reader-generated-files.hmap -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Release-iphoneos/Reader.build/Reader-own-target-headers.hmap -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Release-iphoneos/Reader.build/Reader-all-target-headers.hmap -iquote /Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Release-iphoneos/Reader.build/Reader-project-headers.hmap -F/Users/pedro/Documents/Objective-C/Reader/build/Release-iphoneos -I/Users/pedro/Documents/Objective-C/Reader/build/Release-iphoneos/include -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Release-iphoneos/Reader.build/DerivedSources/armv7 -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Release-iphoneos/Reader.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/q5/q5yrAwxFHKObSRQfGpAGAk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Reader_Prefix-dlcfxlsimudhanfmvpjwosoxgbjw/Reader_Prefix.pch --analyze /Users/pedro/Documents/Objective-C/Reader/Classes/DownloadController.m -o /Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Release-iphoneos/Reader.build/StaticAnalyzer/normal/armv7/DownloadController.plist0#
-
-CAnalyze /Users/pedro/Documents/Objective-C/Reader/Classes/ReaderAppDelegate.m
-s321879918.274317
-e321879918.491852
-r1
-xAnalyze
-x/Users/pedro/Documents/Objective-C/Reader/Classes/ReaderAppDelegate.m
-lSLF07#2@77"Analyze /Users/pedro/Documents/Objective-C/Reader/Classes/ReaderAppDelegate.m321879918#321879918#0(0"0(0#0#69"/Users/pedro/Documents/Objective-C/Reader/Classes/ReaderAppDelegate.m8618670080#1842"    cd /Users/pedro/Documents/Objective-C/Reader    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fasm-blocks -gdwarf-2 -fvisibility=hidden -mthumb -miphoneos-version-min=4.2 -iquote /Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Release-iphoneos/Reader.build/Reader-generated-files.hmap -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Release-iphoneos/Reader.build/Reader-own-target-headers.hmap -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Release-iphoneos/Reader.build/Reader-all-target-headers.hmap -iquote /Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Release-iphoneos/Reader.build/Reader-project-headers.hmap -F/Users/pedro/Documents/Objective-C/Reader/build/Release-iphoneos -I/Users/pedro/Documents/Objective-C/Reader/build/Release-iphoneos/include -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Release-iphoneos/Reader.build/DerivedSources/armv7 -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Release-iphoneos/Reader.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/q5/q5yrAwxFHKObSRQfGpAGAk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Reader_Prefix-dlcfxlsimudhanfmvpjwosoxgbjw/Reader_Prefix.pch --analyze /Users/pedro/Documents/Objective-C/Reader/Classes/ReaderAppDelegate.m -o /Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Release-iphoneos/Reader.build/StaticAnalyzer/normal/armv7/ReaderAppDelegate.plist0#
-
-CAnalyze /Users/pedro/Documents/Objective-C/Reader/Classes/RootViewController.m
-s321879918.366100
-e321879918.504862
-r1
-xAnalyze
-x/Users/pedro/Documents/Objective-C/Reader/Classes/RootViewController.m
-lSLF07#2@78"Analyze /Users/pedro/Documents/Objective-C/Reader/Classes/RootViewController.m321879918#321879918#0(0"0(0#0#70"/Users/pedro/Documents/Objective-C/Reader/Classes/RootViewController.m8621811584#1844"    cd /Users/pedro/Documents/Objective-C/Reader    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fasm-blocks -gdwarf-2 -fvisibility=hidden -mthumb -miphoneos-version-min=4.2 -iquote /Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Release-iphoneos/Reader.build/Reader-generated-files.hmap -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Release-iphoneos/Reader.build/Reader-own-target-headers.hmap -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Release-iphoneos/Reader.build/Reader-all-target-headers.hmap -iquote /Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Release-iphoneos/Reader.build/Reader-project-headers.hmap -F/Users/pedro/Documents/Objective-C/Reader/build/Release-iphoneos -I/Users/pedro/Documents/Objective-C/Reader/build/Release-iphoneos/include -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Release-iphoneos/Reader.build/DerivedSources/armv7 -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Release-iphoneos/Reader.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/q5/q5yrAwxFHKObSRQfGpAGAk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Reader_Prefix-dlcfxlsimudhanfmvpjwosoxgbjw/Reader_Prefix.pch --analyze /Users/pedro/Documents/Objective-C/Reader/Classes/RootViewController.m -o /Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Release-iphoneos/Reader.build/StaticAnalyzer/normal/armv7/RootViewController.plist0#
-
-CAnalyze /Users/pedro/Documents/Objective-C/Reader/main.m
-s321879918.273049
-e321879918.365994
-r1
-xAnalyze
-x/Users/pedro/Documents/Objective-C/Reader/main.m
-lSLF07#2@56"Analyze /Users/pedro/Documents/Objective-C/Reader/main.m321879918#321879918#0(0"0(0#0#48"/Users/pedro/Documents/Objective-C/Reader/main.m8594531808#1808"    cd /Users/pedro/Documents/Objective-C/Reader    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fasm-blocks -gdwarf-2 -fvisibility=hidden -mthumb -miphoneos-version-min=4.2 -iquote /Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Release-iphoneos/Reader.build/Reader-generated-files.hmap -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Release-iphoneos/Reader.build/Reader-own-target-headers.hmap -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Release-iphoneos/Reader.build/Reader-all-target-headers.hmap -iquote /Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Release-iphoneos/Reader.build/Reader-project-headers.hmap -F/Users/pedro/Documents/Objective-C/Reader/build/Release-iphoneos -I/Users/pedro/Documents/Objective-C/Reader/build/Release-iphoneos/include -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Release-iphoneos/Reader.build/DerivedSources/armv7 -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Release-iphoneos/Reader.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/q5/q5yrAwxFHKObSRQfGpAGAk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Reader_Prefix-dlcfxlsimudhanfmvpjwosoxgbjw/Reader_Prefix.pch --analyze /Users/pedro/Documents/Objective-C/Reader/main.m -o /Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Release-iphoneos/Reader.build/StaticAnalyzer/normal/armv7/main.plist0#
-
-CCheck dependencies
-r0
-lSLF07#2@18"Check dependencies321880903#321880903#0(0"0(0#1#0"8641921088#0"0#
-
-CCodeSign /Users/pedro/Documents/Objective-C/Reader/build/Release-iphoneos/Reader.app
-s321880903.813899
-e321880903.959387
-r1
-xCodeSign
-x/Users/pedro/Documents/Objective-C/Reader/build/Release-iphoneos/Reader.app
-o/Users/pedro/Documents/Objective-C/Reader/build/Release-iphoneos/Reader.app: replacing existing signature
-lSLF07#2@42"CodeSign build/Release-iphoneos/Reader.app321880903#321880903#0(106"/Users/pedro/Documents/Objective-C/Reader/build/Release-iphoneos/Reader.app: replacing existing signature0(0#0#75"/Users/pedro/Documents/Objective-C/Reader/build/Release-iphoneos/Reader.app8641905632#653"    cd /Users/pedro/Documents/Objective-C/Reader    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv _CODESIGN_ALLOCATE_ /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate    /usr/bin/codesign -f -s "iPhone Distribution: PEDRO P M GOES" --resource-rules=/Users/pedro/Documents/Objective-C/Reader/build/Release-iphoneos/Reader.app/ResourceRules.plist --entitlements /Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Release-iphoneos/Reader.build/Reader.xcent /Users/pedro/Documents/Objective-C/Reader/build/Release-iphoneos/Reader.app0#
-
-CCompileC build/Reader.build/Release-iphoneos/Reader.build/Objects-normal/armv7/DetailViewController.o /Users/pedro/Documents/Objective-C/Reader/Classes/DetailViewController.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-s321880614.371728
-e321880614.774415
-r1
-xCompileC
-xbuild/Reader.build/Release-iphoneos/Reader.build/Objects-normal/armv7/DetailViewController.o
-x/Users/pedro/Documents/Objective-C/Reader/Classes/DetailViewController.m
-xnormal
-xarmv7
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@80"Compile /Users/pedro/Documents/Objective-C/Reader/Classes/DetailViewController.m321880614#321880614#0(0"0(0#0#72"/Users/pedro/Documents/Objective-C/Reader/Classes/DetailViewController.m8635499008#1819"    cd /Users/pedro/Documents/Objective-C/Reader    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Release-iphoneos/Reader.build/Reader-generated-files.hmap -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Release-iphoneos/Reader.build/Reader-own-target-headers.hmap -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Release-iphoneos/Reader.build/Reader-all-target-headers.hmap -iquote /Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Release-iphoneos/Reader.build/Reader-project-headers.hmap -F/Users/pedro/Documents/Objective-C/Reader/build/Release-iphoneos -I/Users/pedro/Documents/Objective-C/Reader/build/Release-iphoneos/include -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Release-iphoneos/Reader.build/DerivedSources/armv7 -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Release-iphoneos/Reader.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/q5/q5yrAwxFHKObSRQfGpAGAk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Reader_Prefix-cegkcilnoqovofdhnngxbmxaowwc/Reader_Prefix.pch -c /Users/pedro/Documents/Objective-C/Reader/Classes/DetailViewController.m -o /Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Release-iphoneos/Reader.build/Objects-normal/armv7/DetailViewController.o0#
-
-CCompileC build/Reader.build/Release-iphoneos/Reader.build/Objects-normal/armv7/DownloadController.o /Users/pedro/Documents/Objective-C/Reader/Classes/DownloadController.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-s321878943.586093
-e321878943.735703
-r1
-xCompileC
-xbuild/Reader.build/Release-iphoneos/Reader.build/Objects-normal/armv7/DownloadController.o
-x/Users/pedro/Documents/Objective-C/Reader/Classes/DownloadController.m
-xnormal
-xarmv7
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@78"Compile /Users/pedro/Documents/Objective-C/Reader/Classes/DownloadController.m321878943#321878943#0(0"0(0#0#70"/Users/pedro/Documents/Objective-C/Reader/Classes/DownloadController.m8609352864#1815"    cd /Users/pedro/Documents/Objective-C/Reader    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Release-iphoneos/Reader.build/Reader-generated-files.hmap -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Release-iphoneos/Reader.build/Reader-own-target-headers.hmap -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Release-iphoneos/Reader.build/Reader-all-target-headers.hmap -iquote /Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Release-iphoneos/Reader.build/Reader-project-headers.hmap -F/Users/pedro/Documents/Objective-C/Reader/build/Release-iphoneos -I/Users/pedro/Documents/Objective-C/Reader/build/Release-iphoneos/include -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Release-iphoneos/Reader.build/DerivedSources/armv7 -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Release-iphoneos/Reader.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/q5/q5yrAwxFHKObSRQfGpAGAk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Reader_Prefix-cegkcilnoqovofdhnngxbmxaowwc/Reader_Prefix.pch -c /Users/pedro/Documents/Objective-C/Reader/Classes/DownloadController.m -o /Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Release-iphoneos/Reader.build/Objects-normal/armv7/DownloadController.o0#
-
-CCompileC build/Reader.build/Release-iphoneos/Reader.build/Objects-normal/armv7/ReaderAppDelegate.o /Users/pedro/Documents/Objective-C/Reader/Classes/ReaderAppDelegate.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-s321878943.186034
-e321878943.449304
-r1
-xCompileC
-xbuild/Reader.build/Release-iphoneos/Reader.build/Objects-normal/armv7/ReaderAppDelegate.o
-x/Users/pedro/Documents/Objective-C/Reader/Classes/ReaderAppDelegate.m
-xnormal
-xarmv7
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@77"Compile /Users/pedro/Documents/Objective-C/Reader/Classes/ReaderAppDelegate.m321878943#321878943#0(0"0(0#0#69"/Users/pedro/Documents/Objective-C/Reader/Classes/ReaderAppDelegate.m8612943968#1813"    cd /Users/pedro/Documents/Objective-C/Reader    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Release-iphoneos/Reader.build/Reader-generated-files.hmap -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Release-iphoneos/Reader.build/Reader-own-target-headers.hmap -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Release-iphoneos/Reader.build/Reader-all-target-headers.hmap -iquote /Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Release-iphoneos/Reader.build/Reader-project-headers.hmap -F/Users/pedro/Documents/Objective-C/Reader/build/Release-iphoneos -I/Users/pedro/Documents/Objective-C/Reader/build/Release-iphoneos/include -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Release-iphoneos/Reader.build/DerivedSources/armv7 -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Release-iphoneos/Reader.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/q5/q5yrAwxFHKObSRQfGpAGAk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Reader_Prefix-cegkcilnoqovofdhnngxbmxaowwc/Reader_Prefix.pch -c /Users/pedro/Documents/Objective-C/Reader/Classes/ReaderAppDelegate.m -o /Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Release-iphoneos/Reader.build/Objects-normal/armv7/ReaderAppDelegate.o0#
-
-CCompileC build/Reader.build/Release-iphoneos/Reader.build/Objects-normal/armv7/RootViewController.o /Users/pedro/Documents/Objective-C/Reader/Classes/RootViewController.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-s321878943.384628
-e321878943.585988
-r1
-xCompileC
-xbuild/Reader.build/Release-iphoneos/Reader.build/Objects-normal/armv7/RootViewController.o
-x/Users/pedro/Documents/Objective-C/Reader/Classes/RootViewController.m
-xnormal
-xarmv7
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@78"Compile /Users/pedro/Documents/Objective-C/Reader/Classes/RootViewController.m321878943#321878943#0(0"0(0#0#70"/Users/pedro/Documents/Objective-C/Reader/Classes/RootViewController.m8609121920#1815"    cd /Users/pedro/Documents/Objective-C/Reader    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Release-iphoneos/Reader.build/Reader-generated-files.hmap -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Release-iphoneos/Reader.build/Reader-own-target-headers.hmap -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Release-iphoneos/Reader.build/Reader-all-target-headers.hmap -iquote /Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Release-iphoneos/Reader.build/Reader-project-headers.hmap -F/Users/pedro/Documents/Objective-C/Reader/build/Release-iphoneos -I/Users/pedro/Documents/Objective-C/Reader/build/Release-iphoneos/include -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Release-iphoneos/Reader.build/DerivedSources/armv7 -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Release-iphoneos/Reader.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/q5/q5yrAwxFHKObSRQfGpAGAk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Reader_Prefix-cegkcilnoqovofdhnngxbmxaowwc/Reader_Prefix.pch -c /Users/pedro/Documents/Objective-C/Reader/Classes/RootViewController.m -o /Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Release-iphoneos/Reader.build/Objects-normal/armv7/RootViewController.o0#
-
-CCompileC build/Reader.build/Release-iphoneos/Reader.build/Objects-normal/armv7/main.o /Users/pedro/Documents/Objective-C/Reader/main.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-s321878943.184958
-e321878943.384424
-r1
-xCompileC
-xbuild/Reader.build/Release-iphoneos/Reader.build/Objects-normal/armv7/main.o
-x/Users/pedro/Documents/Objective-C/Reader/main.m
-xnormal
-xarmv7
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@56"Compile /Users/pedro/Documents/Objective-C/Reader/main.m321878943#321878943#0(0"0(0#0#48"/Users/pedro/Documents/Objective-C/Reader/main.m8613191232#1779"    cd /Users/pedro/Documents/Objective-C/Reader    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Release-iphoneos/Reader.build/Reader-generated-files.hmap -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Release-iphoneos/Reader.build/Reader-own-target-headers.hmap -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Release-iphoneos/Reader.build/Reader-all-target-headers.hmap -iquote /Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Release-iphoneos/Reader.build/Reader-project-headers.hmap -F/Users/pedro/Documents/Objective-C/Reader/build/Release-iphoneos -I/Users/pedro/Documents/Objective-C/Reader/build/Release-iphoneos/include -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Release-iphoneos/Reader.build/DerivedSources/armv7 -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Release-iphoneos/Reader.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/q5/q5yrAwxFHKObSRQfGpAGAk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Reader_Prefix-cegkcilnoqovofdhnngxbmxaowwc/Reader_Prefix.pch -c /Users/pedro/Documents/Objective-C/Reader/main.m -o /Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Release-iphoneos/Reader.build/Objects-normal/armv7/main.o0#
-
-CCompileXIB /Users/pedro/Documents/Objective-C/Reader/DetailView.xib
-s321878935.547674
-e321878941.797935
-r1
-xCompileXIB
-x/Users/pedro/Documents/Objective-C/Reader/DetailView.xib
-oCouldn't open shared capabilities memory GSCapabilities (No such file or directory)
-oCouldn't open shared capabilities memory GSCapabilities (No such file or directory)
-oCouldn't open shared capabilities memory GSCapabilities (No such file or directory)
-lSLF07#2@25"CompileXIB DetailView.xib321878935#321878941#0(252"Couldn't open shared capabilities memory GSCapabilities (No such file or directory)Couldn't open shared capabilities memory GSCapabilities (No such file or directory)Couldn't open shared capabilities memory GSCapabilities (No such file or directory)0(0#0#56"/Users/pedro/Documents/Objective-C/Reader/DetailView.xib8613597280#552"    cd /Users/pedro/Documents/Objective-C/Reader    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/pedro/Documents/Objective-C/Reader/build/Release-iphoneos/Reader.app/DetailView.nib /Users/pedro/Documents/Objective-C/Reader/DetailView.xib --sdk /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk0#
-
-CCompileXIB /Users/pedro/Documents/Objective-C/Reader/MainWindow.xib
-s321878935.546846
-e321878939.690789
-r1
-xCompileXIB
-x/Users/pedro/Documents/Objective-C/Reader/MainWindow.xib
-oCouldn't open shared capabilities memory GSCapabilities (No such file or directory)
-lSLF07#2@25"CompileXIB MainWindow.xib321878935#321878939#0(84"Couldn't open shared capabilities memory GSCapabilities (No such file or directory)0(0#0#56"/Users/pedro/Documents/Objective-C/Reader/MainWindow.xib8613732000#552"    cd /Users/pedro/Documents/Objective-C/Reader    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/pedro/Documents/Objective-C/Reader/build/Release-iphoneos/Reader.app/MainWindow.nib /Users/pedro/Documents/Objective-C/Reader/MainWindow.xib --sdk /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk0#
-
-CCopyPNGFile /Users/pedro/Documents/Objective-C/Reader/build/Release-iphoneos/Reader.app/ABO@72.png ABO@72.png
-s321878939.691005
-e321878941.760851
-r1
-xCopyPNGFile
-x/Users/pedro/Documents/Objective-C/Reader/build/Release-iphoneos/Reader.app/ABO@72.png
-xABO@72.png
-lSLF07#2@67"CopyPNGFile build/Release-iphoneos/Reader.app/ABO@72.png ABO@72.png321878939#321878941#0(0"0(0#0#52"/Users/pedro/Documents/Objective-C/Reader/ABO@72.png8613464992#570"    cd /Users/pedro/Documents/Objective-C/Reader    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/pedro/Documents/Objective-C/Reader/ABO@72.png /Users/pedro/Documents/Objective-C/Reader/build/Release-iphoneos/Reader.app/ABO@72.png0#
-
-CCpResource build/Release-iphoneos/Reader.app/ResourceRules.plist /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist
-s321878935.307368
-e321878935.546752
-r1
-xCpResource
-xbuild/Release-iphoneos/Reader.app/ResourceRules.plist
-x/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist
-lSLF07#2@94"Copy /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist321878935#321878935#0(0"0(0#0#89"/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist3419159298929816064#522"    cd /Users/pedro/Documents/Objective-C/Reader    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -strip-debug-symbols -resolve-src-symlinks /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist /Users/pedro/Documents/Objective-C/Reader/build/Release-iphoneos/Reader.app0#
-
-CCpResource build/Release-iphoneos/Reader.app/ResourceRules.plist /Developer4.2/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist
-s321876884.188235
-e321876884.265929
-r1
-xCpResource
-xbuild/Release-iphoneos/Reader.app/ResourceRules.plist
-x/Developer4.2/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist
-lSLF07#2@97"Copy /Developer4.2/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist321876884#321876884#0(0"0(0#0#92"/Developer4.2/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist8642425184#534"    cd /Users/pedro/Documents/Objective-C/Reader    setenv PATH "/Developer4.2/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer4.2/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer4.2/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -strip-debug-symbols -resolve-src-symlinks /Developer4.2/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist /Users/pedro/Documents/Objective-C/Reader/build/Release-iphoneos/Reader.app0#
-
-CGenerateDSYMFile /Users/pedro/Documents/Objective-C/Reader/build/Release-iphoneos/Reader.app.dSYM /Users/pedro/Documents/Objective-C/Reader/build/Release-iphoneos/Reader.app/Reader
-s321880614.805797
-e321880614.826323
-r1
-xGenerateDSYMFile
-x/Users/pedro/Documents/Objective-C/Reader/build/Release-iphoneos/Reader.app.dSYM
-x/Users/pedro/Documents/Objective-C/Reader/build/Release-iphoneos/Reader.app/Reader
-lSLF07#2@96"GenerateDSYMFile build/Release-iphoneos/Reader.app.dSYM build/Release-iphoneos/Reader.app/Reader321880614#321880614#0(0"0(0#0#82"/Users/pedro/Documents/Objective-C/Reader/build/Release-iphoneos/Reader.app/Reader8637171680#372"    cd /Users/pedro/Documents/Objective-C/Reader    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/pedro/Documents/Objective-C/Reader/build/Release-iphoneos/Reader.app/Reader -o /Users/pedro/Documents/Objective-C/Reader/build/Release-iphoneos/Reader.app.dSYM0#
-
-CLd /Users/pedro/Documents/Objective-C/Reader/build/Release-iphoneos/Reader.app/Reader normal armv7
-s321880614.774508
-e321880614.805695
-r1
-xLd
-x/Users/pedro/Documents/Objective-C/Reader/build/Release-iphoneos/Reader.app/Reader
-xnormal
-xarmv7
-lSLF07#2@87"Link /Users/pedro/Documents/Objective-C/Reader/build/Release-iphoneos/Reader.app/Reader321880614#321880614#0(0"0(0#0#0"8630292096#840"    cd /Users/pedro/Documents/Objective-C/Reader    setenv IPHONEOS_DEPLOYMENT_TARGET 4.2    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -arch armv7 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -L/Users/pedro/Documents/Objective-C/Reader/build/Release-iphoneos -F/Users/pedro/Documents/Objective-C/Reader/build/Release-iphoneos -filelist /Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Release-iphoneos/Reader.build/Objects-normal/armv7/Reader.LinkFileList -dead_strip -miphoneos-version-min=4.2 -framework Foundation -framework UIKit -framework CoreGraphics -o /Users/pedro/Documents/Objective-C/Reader/build/Release-iphoneos/Reader.app/Reader0#
-
-CProcessInfoPlistFile /Users/pedro/Documents/Objective-C/Reader/build/Release-iphoneos/Reader.app/Info.plist Reader-Info.plist
-s321878935.429335
-e321878935.491064
-r1
-xProcessInfoPlistFile
-x/Users/pedro/Documents/Objective-C/Reader/build/Release-iphoneos/Reader.app/Info.plist
-xReader-Info.plist
-lSLF07#2@25"Process Reader-Info.plist321878935#321878935#0(0"0(0#0#59"/Users/pedro/Documents/Objective-C/Reader/Reader-Info.plist8614238240#576"    cd /Users/pedro/Documents/Objective-C/Reader    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility Reader-Info.plist -genpkginfo /Users/pedro/Documents/Objective-C/Reader/build/Release-iphoneos/Reader.app/PkgInfo -expandbuildsettings -format binary -platform iphoneos -resourcerulesfile /Users/pedro/Documents/Objective-C/Reader/build/Release-iphoneos/Reader.app/ResourceRules.plist -o /Users/pedro/Documents/Objective-C/Reader/build/Release-iphoneos/Reader.app/Info.plist0#
-
-CProcessPCH /var/folders/q5/q5yrAwxFHKObSRQfGpAGAk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Reader_Prefix-ajmfbvhzfxjfapcfvtvedgxkodgn/Reader_Prefix.pch.gch Reader_Prefix.pch normal armv7 objective-c com.apple.compilers.gcc.4_2
-s321876887.399971
-e321876888.218077
-r1
-xProcessPCH
-x/var/folders/q5/q5yrAwxFHKObSRQfGpAGAk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Reader_Prefix-ajmfbvhzfxjfapcfvtvedgxkodgn/Reader_Prefix.pch.gch
-xReader_Prefix.pch
-xnormal
-xarmv7
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@28"Precompile Reader_Prefix.pch321876887#321876888#0(0"0(0#0#59"/Users/pedro/Documents/Objective-C/Reader/Reader_Prefix.pch8642913600#1685"    cd /Users/pedro/Documents/Objective-C/Reader    setenv LANG en_US.US-ASCII    setenv PATH "/Developer4.2/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer4.2/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer4.2/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wreturn-type -Wunused-variable -isysroot /Developer4.2/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Release-iphoneos/Reader.build/Reader-generated-files.hmap -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Release-iphoneos/Reader.build/Reader-own-target-headers.hmap -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Release-iphoneos/Reader.build/Reader-all-target-headers.hmap -iquote /Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Release-iphoneos/Reader.build/Reader-project-headers.hmap -F/Users/pedro/Documents/Objective-C/Reader/build/Release-iphoneos -I/Users/pedro/Documents/Objective-C/Reader/build/Release-iphoneos/include -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Release-iphoneos/Reader.build/DerivedSources/armv7 -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Release-iphoneos/Reader.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -c /Users/pedro/Documents/Objective-C/Reader/Reader_Prefix.pch -o /var/folders/q5/q5yrAwxFHKObSRQfGpAGAk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Reader_Prefix-ajmfbvhzfxjfapcfvtvedgxkodgn/Reader_Prefix.pch.gch0#
-
-CProcessPCH /var/folders/q5/q5yrAwxFHKObSRQfGpAGAk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Reader_Prefix-cegkcilnoqovofdhnngxbmxaowwc/Reader_Prefix.pch.gch Reader_Prefix.pch normal armv7 objective-c com.apple.compilers.gcc.4_2
-s321878941.798166
-e321878943.184850
-r1
-xProcessPCH
-x/var/folders/q5/q5yrAwxFHKObSRQfGpAGAk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Reader_Prefix-cegkcilnoqovofdhnngxbmxaowwc/Reader_Prefix.pch.gch
-xReader_Prefix.pch
-xnormal
-xarmv7
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@28"Precompile Reader_Prefix.pch321878941#321878943#0(0"0(0#0#59"/Users/pedro/Documents/Objective-C/Reader/Reader_Prefix.pch8608898944#1673"    cd /Users/pedro/Documents/Objective-C/Reader    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Release-iphoneos/Reader.build/Reader-generated-files.hmap -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Release-iphoneos/Reader.build/Reader-own-target-headers.hmap -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Release-iphoneos/Reader.build/Reader-all-target-headers.hmap -iquote /Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Release-iphoneos/Reader.build/Reader-project-headers.hmap -F/Users/pedro/Documents/Objective-C/Reader/build/Release-iphoneos -I/Users/pedro/Documents/Objective-C/Reader/build/Release-iphoneos/include -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Release-iphoneos/Reader.build/DerivedSources/armv7 -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Release-iphoneos/Reader.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -c /Users/pedro/Documents/Objective-C/Reader/Reader_Prefix.pch -o /var/folders/q5/q5yrAwxFHKObSRQfGpAGAk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Reader_Prefix-cegkcilnoqovofdhnngxbmxaowwc/Reader_Prefix.pch.gch0#
-
-CProcessPCH /var/folders/q5/q5yrAwxFHKObSRQfGpAGAk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Reader_Prefix-dlcfxlsimudhanfmvpjwosoxgbjw/Reader_Prefix.pch.pth Reader_Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.analyzer
-s321879916.261060
-e321879918.272410
-r1
-xProcessPCH
-x/var/folders/q5/q5yrAwxFHKObSRQfGpAGAk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Reader_Prefix-dlcfxlsimudhanfmvpjwosoxgbjw/Reader_Prefix.pch.pth
-xReader_Prefix.pch
-xnormal
-xarmv7
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.analyzer
-lSLF07#2@28"Precompile Reader_Prefix.pch321879916#321879918#0(0"0(0#0#59"/Users/pedro/Documents/Objective-C/Reader/Reader_Prefix.pch8595729824#1684"    cd /Users/pedro/Documents/Objective-C/Reader    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/clang -x objective-c-header -arch armv7 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fasm-blocks -gdwarf-2 -fvisibility=hidden -mthumb -miphoneos-version-min=4.2 -iquote /Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Release-iphoneos/Reader.build/Reader-generated-files.hmap -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Release-iphoneos/Reader.build/Reader-own-target-headers.hmap -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Release-iphoneos/Reader.build/Reader-all-target-headers.hmap -iquote /Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Release-iphoneos/Reader.build/Reader-project-headers.hmap -F/Users/pedro/Documents/Objective-C/Reader/build/Release-iphoneos -I/Users/pedro/Documents/Objective-C/Reader/build/Release-iphoneos/include -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Release-iphoneos/Reader.build/DerivedSources/armv7 -I/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Release-iphoneos/Reader.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -c /Users/pedro/Documents/Objective-C/Reader/Reader_Prefix.pch -o /var/folders/q5/q5yrAwxFHKObSRQfGpAGAk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Reader_Prefix-dlcfxlsimudhanfmvpjwosoxgbjw/Reader_Prefix.pch.pth0#
-
-CProcessProductPackaging "/Users/pedro/Library/MobileDevice/Provisioning Profiles/8F278DC3-2B70-420E-BB27-E5DBFDEB8273.mobileprovision" /Users/pedro/Documents/Objective-C/Reader/build/Release-iphoneos/Reader.app/embedded.mobileprovision
-s321876888.885360
-e321876888.911714
-r1
-xProcessProductPackaging
-x/Users/pedro/Library/MobileDevice/Provisioning Profiles/8F278DC3-2B70-420E-BB27-E5DBFDEB8273.mobileprovision
-x/Users/pedro/Documents/Objective-C/Reader/build/Release-iphoneos/Reader.app/embedded.mobileprovision
-lSLF07#2@193"ProcessProductPackaging "/Users/pedro/Library/MobileDevice/Provisioning Profiles/8F278DC3-2B70-420E-BB27-E5DBFDEB8273.mobileprovision" build/Release-iphoneos/Reader.app/embedded.mobileprovision321876888#321876888#0(0"0(0#0#100"/Users/pedro/Documents/Objective-C/Reader/build/Release-iphoneos/Reader.app/embedded.mobileprovision8642043936#436"    cd /Users/pedro/Documents/Objective-C/Reader    setenv PATH "/Developer4.2/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer4.2/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    <com.apple.tools.product-pkg-utility> "/Users/pedro/Library/MobileDevice/Provisioning Profiles/8F278DC3-2B70-420E-BB27-E5DBFDEB8273.mobileprovision" -o /Users/pedro/Documents/Objective-C/Reader/build/Release-iphoneos/Reader.app/embedded.mobileprovision0#
-
-CProcessProductPackaging "/Users/pedro/Library/MobileDevice/Provisioning Profiles/ECA16DCC-C78E-4A3D-8B3B-CF8049E4DFB5.mobileprovision" /Users/pedro/Documents/Objective-C/Reader/build/Release-iphoneos/Reader.app/embedded.mobileprovision
-s321880903.760879
-e321880903.790180
-r1
-xProcessProductPackaging
-x/Users/pedro/Library/MobileDevice/Provisioning Profiles/ECA16DCC-C78E-4A3D-8B3B-CF8049E4DFB5.mobileprovision
-x/Users/pedro/Documents/Objective-C/Reader/build/Release-iphoneos/Reader.app/embedded.mobileprovision
-lSLF07#2@193"ProcessProductPackaging "/Users/pedro/Library/MobileDevice/Provisioning Profiles/ECA16DCC-C78E-4A3D-8B3B-CF8049E4DFB5.mobileprovision" build/Release-iphoneos/Reader.app/embedded.mobileprovision321880903#321880903#0(0"0(0#0#100"/Users/pedro/Documents/Objective-C/Reader/build/Release-iphoneos/Reader.app/embedded.mobileprovision8641112448#430"    cd /Users/pedro/Documents/Objective-C/Reader    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    <com.apple.tools.product-pkg-utility> "/Users/pedro/Library/MobileDevice/Provisioning Profiles/ECA16DCC-C78E-4A3D-8B3B-CF8049E4DFB5.mobileprovision" -o /Users/pedro/Documents/Objective-C/Reader/build/Release-iphoneos/Reader.app/embedded.mobileprovision0#
-
-CProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/Entitlements.plist /Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Release-iphoneos/Reader.build/Reader.xcent
-s321880903.793918
-e321880903.813804
-r1
-xProcessProductPackaging
-x/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/Entitlements.plist
-x/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Release-iphoneos/Reader.build/Reader.xcent
-lSLF07#2@174"ProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/Entitlements.plist build/Reader.build/Release-iphoneos/Reader.build/Reader.xcent321880903#321880903#0(0"0(0#0#103"/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Release-iphoneos/Reader.build/Reader.xcent8639638464#437"    cd /Users/pedro/Documents/Objective-C/Reader    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    <com.apple.tools.product-pkg-utility> /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/Entitlements.plist -entitlements -format xml -o /Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Release-iphoneos/Reader.build/Reader.xcent0#
-
-CProcessProductPackaging /Developer4.2/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/Entitlements.plist /Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Release-iphoneos/Reader.build/Reader.xcent
-s321876888.916957
-e321876888.940941
-r1
-xProcessProductPackaging
-x/Developer4.2/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/Entitlements.plist
-x/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Release-iphoneos/Reader.build/Reader.xcent
-lSLF07#2@177"ProcessProductPackaging /Developer4.2/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/Entitlements.plist build/Reader.build/Release-iphoneos/Reader.build/Reader.xcent321876888#321876888#0(0"0(0#0#103"/Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Release-iphoneos/Reader.build/Reader.xcent8642750592#446"    cd /Users/pedro/Documents/Objective-C/Reader    setenv PATH "/Developer4.2/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer4.2/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    <com.apple.tools.product-pkg-utility> /Developer4.2/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/Entitlements.plist -entitlements -format xml -o /Users/pedro/Documents/Objective-C/Reader/build/Reader.build/Release-iphoneos/Reader.build/Reader.xcent0#
-
-CTouch /Users/pedro/Documents/Objective-C/Reader/build/Release-iphoneos/Reader.app
-s321880903.790264
-e321880903.793816
-r1
-xTouch
-x/Users/pedro/Documents/Objective-C/Reader/build/Release-iphoneos/Reader.app
-lSLF07#2@81"Touch /Users/pedro/Documents/Objective-C/Reader/build/Release-iphoneos/Reader.app321880903#321880903#0(0"0(0#0#0"8640200000#271"    cd /Users/pedro/Documents/Objective-C/Reader    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/pedro/Documents/Objective-C/Reader/build/Release-iphoneos/Reader.app0#
-
-CValidate /Users/pedro/Documents/Objective-C/Reader/build/Release-iphoneos/Reader.app
-s321880903.959475
-e321880904.112187
-r1
-xValidate
-x/Users/pedro/Documents/Objective-C/Reader/build/Release-iphoneos/Reader.app
-o2011-03-15 11:21:43.977 Validation[4389:607] *** Warning: Defaulting to the standard codesign tool
-lSLF07#2@42"Validate build/Release-iphoneos/Reader.app321880903#321880904#0(99"2011-03-15 11:21:43.977 Validation[4389:607] *** Warning: Defaulting to the standard codesign tool0(0#0#75"/Users/pedro/Documents/Objective-C/Reader/build/Release-iphoneos/Reader.app8641249024#380"    cd /Users/pedro/Documents/Objective-C/Reader    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv PRODUCT_TYPE com.apple.product-type.application    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/Validation /Users/pedro/Documents/Objective-C/Reader/build/Release-iphoneos/Reader.app0#
-

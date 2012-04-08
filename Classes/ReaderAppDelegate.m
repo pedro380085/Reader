@@ -11,23 +11,43 @@
 
 #import "RootViewController.h"
 #import "DetailViewController.h"
-
+#import "PropagandaViewController.h"
 
 @implementation ReaderAppDelegate
 
-@synthesize window, splitViewController, rootViewController, detailViewController;
-
+@synthesize window, splitViewController, navigationController, rootViewController, detailViewController;
+@synthesize propagandaViewController = _propagandaViewController;
 
 #pragma mark -
 #pragma mark Application lifecycle
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
+
+    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
+        [self.window addSubview:navigationController.view];
+        [self.window makeKeyAndVisible];
+        
+        _propagandaViewController = [[PropagandaViewController alloc] initWithNibName:@"PropagandaViewController_iPhone" bundle:nil];
+        
+        [UIView transitionFromView:navigationController.view toView:_propagandaViewController.view duration:0.0 options:UIViewAnimationOptionTransitionNone completion:NULL];
+        
+        _propagandaViewController.delegate = rootViewController;
+    } else {
+        [self.window addSubview:splitViewController.view];
+        [self.window makeKeyAndVisible];
+        
+        _propagandaViewController = [[PropagandaViewController alloc] initWithNibName:@"PropagandaViewController" bundle:nil];
+        
+        [UIView transitionFromView:splitViewController.view toView:_propagandaViewController.view duration:0.0 options:UIViewAnimationOptionTransitionNone completion:NULL];
+        
+        _propagandaViewController.delegate = detailViewController;
+    }
     
-    // Override point for customization after app launch.
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(appInativo) name:UIApplicationWillResignActiveNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(appAtivo) name:UIApplicationDidBecomeActiveNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(propagandaApresentada) name:PropagandaApresentadaNotification object:nil];
     
-    // Add the split view controller's view to the window and display.
-    [self.window addSubview:splitViewController.view];
-    [self.window makeKeyAndVisible];
+    propagandaMostrada = NO;
     
     return YES;
 }
@@ -64,12 +84,26 @@
      */
 }
 
+#pragma mark -
+#pragma mark User Methods
 
-- (void)dealloc {
-    [splitViewController release];
-    [window release];
-    [super dealloc];
+- (void)appInativo {
+    if (propagandaMostrada == NO) {
+        [_propagandaViewController invalidarTimer];
+    }
 }
+
+- (void)appAtivo {
+    if (propagandaMostrada == NO) {
+        [_propagandaViewController iniciarTimer];
+    }
+}
+
+- (void)propagandaApresentada {
+    propagandaMostrada = YES;
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
 
 
 @end

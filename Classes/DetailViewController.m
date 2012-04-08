@@ -8,43 +8,27 @@
 
 #import "DetailViewController.h"
 #import "RootViewController.h"
-#import "PDFScrollView.h"
 #import "PropagandaViewController.h"
 
 
 @implementation DetailViewController
 
-@synthesize popoverController, root, propagandaViewController, cacheButton, banner, urlAtual;
+@synthesize popoverController, cacheButton, banner;
+@synthesize detailViewController = _detailViewController;
+@synthesize urlAtual = _urlAtual;
 
 #pragma mark -
 #pragma mark View lifecycle
 
 - (void) viewDidLoad {
-	// Autorizando o acesso da classe RootViewController aos objetos da DetailViewController
-	root.detailViewController = self;
-    
-    //[BannerDownloadController sharedBannerDownloadController].delegate = self;
-    
-    // Criando e adicionando o controlador da propaganda
-    propagandaViewController = [[PropagandaViewController alloc] initWithNibName:@"PropagandaViewController" bundle:nil];
-    propagandaViewController.delegate = self;
-    
-    
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(appInativo) name:UIApplicationWillResignActiveNotification object:nil];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(appAtivo) name:UIApplicationDidBecomeActiveNotification object:nil];
-    
-    propagandaMostrada = NO;
+    cacheButton.title = NSLocalizedString(@"Atualizar dados", nil);
+    pdfOutroApp.title = NSLocalizedString(@"Ler com outro app", nil);
 }
 
 - (void)viewDidUnload {
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
     self.popoverController = nil;
-}
-
-- (void)viewWillAppear:(BOOL)animated {
-    // A animação, para funcionar, só pode ser chamada quando a view já tiver aparecido na tela
-    [UIView transitionFromView:self.view toView:propagandaViewController.view duration:0.0 options:UIViewAnimationOptionTransitionNone completion:NULL];
 }
 
 #pragma mark -
@@ -65,67 +49,32 @@
     // Relinquish ownership any cached data, images, etc. that aren't in use.
 }
 
-- (void)dealloc {
-	[popoverController release];
-	[root release];
-    [propagandaViewController release];
-    [cacheButton release];
-    [banner release];
-    [urlAtual release];
-    
-    [super dealloc];
-}
 
 #pragma mark -
 #pragma mark User Methods
 
-- (void)appInativo {
-    if (propagandaMostrada == NO) {
-        [propagandaViewController invalidarTimer];
-    }
+- (void)propagandaApresentada:(PropagandaViewController *)pvc {
+    [UIView transitionFromView:pvc.view toView:self.parentViewController.view duration:ANIMACAO_PADRAO*1.5 options:UIViewAnimationOptionTransitionFlipFromLeft completion:NULL];
 }
 
-- (void)appAtivo {
-    if (propagandaMostrada == NO) {
-        [propagandaViewController iniciarTimer];
-    }
-}
-
-
-- (IBAction) baixarCache {
+- (IBAction)baixarCache {
 	// Atualiza o cache
 	[[CacheDownloadController sharedCacheDownloadController] atualizarCache];
 }
 
-- (void) apresentarPdf:(NSString *)arquivo {
+- (void)apresentarPdf:(NSString *)arquivo {
 	
 	if (self.popoverController != nil) {
         [self.popoverController dismissPopoverAnimated:YES];
     }  
-
-    
-	/* Pega o número da linha selecionada, obtem o path do array, cria uma url e uma requisição e por fim carrega a requisição
-		na webView. */
-	/*
-	// Create our PDFScrollView and add it to the view controller.
-	PDFScrollView *sv = [[PDFScrollView alloc] initWithFrame:webView.bounds];
-	[webView addSubview:sv];
-	[sv release];
-    */
     
     self.urlAtual = [NSURL fileURLWithPath:arquivo];
-    [webView loadRequest:[NSURLRequest requestWithURL:urlAtual]];
-}
-
-- (void)propagandaApresentada {
-    [UIView transitionFromView:propagandaViewController.view toView:self.view duration:1.5 options:UIViewAnimationOptionTransitionFlipFromLeft completion:NULL];
-    propagandaMostrada = YES;
-    [[NSNotificationCenter defaultCenter] removeObserver:self];
+    [webView loadRequest:[NSURLRequest requestWithURL:_urlAtual]];
 }
 
 - (IBAction)lerPdfEmOutroApp {
-    if (urlAtual != nil) {
-        UIDocumentInteractionController *docController = [[UIDocumentInteractionController interactionControllerWithURL:urlAtual] retain];
+    if (_urlAtual != nil) {
+        UIDocumentInteractionController *docController = [UIDocumentInteractionController interactionControllerWithURL:_urlAtual];
         docController.delegate = self;
         [docController presentOpenInMenuFromBarButtonItem:pdfOutroApp animated:YES];
     } else {
@@ -133,28 +82,22 @@
     }
 }
 
-- (IBAction) infoModoEdicao {
-	// Informa usuário sobre como modificar as células da tabela
-    UIAlertView *alert = [[UIAlertView alloc] 
-						  initWithTitle:@"Sobre" 
-						  message: @"Aplicativo para leitura das revistas dos Arquivos Brasileiros de Oftamologia (ABO).\n\nDesenvolvedor: Pedro P. M. Góes\n\nVersão atual: 1.2\nRelease: Novembro/2011\n"
-						  delegate:self 
-						  cancelButtonTitle:@"Ok" 
-						  otherButtonTitles:nil];
-	[alert show];
-	[alert release];
-}
-
-- (IBAction) infoLerPdfEmOutroApp {
+- (IBAction)infoLerPdfEmOutroApp {
 	// Informa usuário sobre como ler o pdf em outro app
 	UIAlertView *alert = [[UIAlertView alloc] 
-						  initWithTitle:@"Externo" 
-						  message: @"Caso queira ler alguma edição em outro aplicativo, selecione o documento desejado na tabela."
+						  initWithTitle:NSLocalizedString(@"Externo", nil)
+						  message: NSLocalizedString(@"Externo Mensagem", @"Caso queira ler alguma edição em outro aplicativo, selecione o documento desejado na tabela.")
 						  delegate:self 
 						  cancelButtonTitle:@"Ok" 
 						  otherButtonTitles:nil];
 	[alert show];
-	[alert release];
+}
+
+- (IBAction)mostrarActionSheet:(id)sender {
+    // Mostra popover para o botão
+
+    UIActionSheet *action = [[UIActionSheet alloc] initWithTitle:NSLocalizedString(@"Ações", nil) delegate:self cancelButtonTitle:NSLocalizedString(@"Cancelar", nil) destructiveButtonTitle:@"" otherButtonTitles: nil];
+    [action showFromBarButtonItem:actionButton animated:YES];
 }
 
 #pragma mark -
@@ -162,11 +105,10 @@
 
 - (void)splitViewController: (UISplitViewController*)svc willHideViewController:(UIViewController *)aViewController withBarButtonItem:(UIBarButtonItem*)barButtonItem forPopoverController: (UIPopoverController*)pc {
     
-    barButtonItem.title = @"Arquivos";
+    barButtonItem.title = NSLocalizedString(@"Arquivos", nil);
     NSMutableArray *items = [[toolbar items] mutableCopy];
     [items insertObject:barButtonItem atIndex:0];
     [toolbar setItems:items animated:YES];
-    [items release];
     self.popoverController = pc;
 }
 
@@ -177,7 +119,6 @@
     NSMutableArray *items = [[toolbar items] mutableCopy];
     [items removeObjectAtIndex:0];
     [toolbar setItems:items animated:YES];
-    [items release];
     self.popoverController = nil;
 }
 
@@ -185,7 +126,15 @@
 #pragma mark Document Interaction Controller Delegate
 
 - (void)documentInteractionControllerDidEndPreview:(UIDocumentInteractionController *)controller {
-    [controller release];
+}
+
+#pragma mark -
+#pragma mark Action Sheet Delegate
+
+- (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex {
+    if (buttonIndex == 0) {
+        [self lerPdfEmOutroApp];
+    }
 }
 
 

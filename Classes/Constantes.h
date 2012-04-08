@@ -8,9 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
+
+// URL's para localização dos arquivos
 #define URL_ARQUIVO             @"http://www.cbo.com.br/Reader/uploads/"
 #define URL_IMAGEM              @"http://www.cbo.com.br/Reader/imagens/"
 
+// Informações sobre o cache
 #define CACHE_PADRAO            @"padrao"
 #define CACHE_PADRAO_URL        @"http://www.cbo.com.br/Reader/cache.php"
 #define CACHE_PADRAO_ARQUIVO    @"cache.txt"
@@ -20,15 +23,6 @@
 #define CACHE_BANNER_URL        @"http://www.cbo.com.br/Reader/cache.php"
 #define CACHE_BANNER_ARQUIVO    @"cache_banner.txt"
 #define CACHE_BANNER_PLIST      @"cache_banner.plist"
-
-#define DOWNLOAD_URL            @"url"
-#define DOWNLOAD_ARQUIVO        @"arquivo"
-#define DOWNLOAD_PLIST_PADRAO   @"plistpadrao"
-#define DOWNLOAD_PLIST_BANNER   @"plistbanner"
-#define DOWNLOAD_PATH           @"path"
-#define DOWNLOAD_TAMANHO        @"tamanho"
-#define DOWNLOAD_CACHE          @"cache"
-
 
 #define CACHE_ID                @"id"
 #define CACHE_TITULO            @"titulo"
@@ -40,7 +34,16 @@
 #define CACHE_VALOR             @"valor"
 #define CACHE_CONTADOR          @"contador"
 
+// Informações sobre o download
+#define DOWNLOAD_URL            @"url"
+#define DOWNLOAD_ARQUIVO        @"arquivo"
+#define DOWNLOAD_PLIST_PADRAO   @"plistpadrao"
+#define DOWNLOAD_PLIST_BANNER   @"plistbanner"
+#define DOWNLOAD_PATH           @"path"
+#define DOWNLOAD_TAMANHO        @"tamanho"
+#define DOWNLOAD_CACHE          @"cache"
 
+// Estados para a interface
 #define DOWNLOAD_CONEXAO_RESPOSTA_RECEBIDA       1
 #define DOWNLOAD_CONEXAO_DADOS_RECEBIDOS         2
 #define DOWNLOAD_CONEXAO_FALHOU                  3
@@ -54,6 +57,8 @@
 
 #define EditButtonPushed                        @"EditButtonPushed"
 #define EditButtonPushedNotification            @"EditButtonPushedNotification"
+
+#define PropagandaApresentadaNotification       @"PropagandaApresentadaNotification"
 
 #define ActionCellButtonPushed                  @"ActionCellButtonPushed"
 

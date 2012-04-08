@@ -11,11 +11,13 @@
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
-		2804200B108E984D000629CD /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28042008108E984D000629CD /* RootViewController.m */; };
 		2804200C108E984D000629CD /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2804200A108E984D000629CD /* DetailViewController.m */; };
-		2804203C108E9BAB000629CD /* DetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2804203B108E9BAB000629CD /* DetailView.xib */; };
+		2804203C108E9BAB000629CD /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2804203B108E9BAB000629CD /* DetailViewController.xib */; };
 		2892E4100DC94CBA00A64D0F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */; };
 		28AD73600D9D9599002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD735F0D9D9599002E5188 /* MainWindow.xib */; };
+		EB2D94C1152FBE74000FBDAD /* PropagandaViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB2D94C0152FBE74000FBDAD /* PropagandaViewController_iPhone.xib */; };
+		EB527C07152E46590004AA73 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB527C08152E46590004AA73 /* RootViewController.m */; };
+		EB527C0C152E503C0004AA73 /* DetailViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB527C0B152E503C0004AA73 /* DetailViewController_iPhone.xib */; };
 		EB5729C71426F2B4004F4BEA /* DownloadController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB5729C51426F2B4004F4BEA /* DownloadController.m */; };
 		EB73E54B145CE808001C6C29 /* PropagandaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB73E549145CE808001C6C29 /* PropagandaViewController.m */; };
 		EB73E54C145CE808001C6C29 /* PropagandaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB73E54A145CE808001C6C29 /* PropagandaViewController.xib */; };
@@ -24,15 +26,16 @@
 		EB73E5CF145F16AA001C6C29 /* Xperio.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EB73E5CE145F16AA001C6C29 /* Xperio.jpg */; };
 		EB7EC40113395CB4000E9812 /* button blue.png in Resources */ = {isa = PBXBuildFile; fileRef = EB7EC3FF13395CB4000E9812 /* button blue.png */; };
 		EB7EC40213395CB4000E9812 /* icon blue add.png in Resources */ = {isa = PBXBuildFile; fileRef = EB7EC40013395CB4000E9812 /* icon blue add.png */; };
-		EBA79C8B13406EC6000B17BD /* PDFScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA79C8813406EC6000B17BD /* PDFScrollView.m */; };
-		EBA79C8C13406EC6000B17BD /* TiledPDFView.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA79C8A13406EC6000B17BD /* TiledPDFView.m */; };
 		EBA79C9A13406F5E000B17BD /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBA79C9913406F5E000B17BD /* QuartzCore.framework */; };
 		EBAF789E142A65A100297DE0 /* ImageDownloadController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBAF789D142A65A100297DE0 /* ImageDownloadController.m */; };
 		EBB4BF9A1440993B00CC0F70 /* BannerDownloadController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBB4BF991440993B00CC0F70 /* BannerDownloadController.m */; };
+		EBC55855152E3039003CF60E /* MainWindow_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBC55854152E3039003CF60E /* MainWindow_iPhone.xib */; };
+		EBC5585B152E335A003CF60E /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBC5585A152E335A003CF60E /* RootViewController.xib */; };
 		EBE208DE133A8C3C0016F51A /* button red.png in Resources */ = {isa = PBXBuildFile; fileRef = EBE208DC133A8C3C0016F51A /* button red.png */; };
 		EBE208DF133A8C3C0016F51A /* icon red remove.png in Resources */ = {isa = PBXBuildFile; fileRef = EBE208DD133A8C3C0016F51A /* icon red remove.png */; };
 		EBE95EC4132F6E4C0036208A /* ABO@72.png in Resources */ = {isa = PBXBuildFile; fileRef = EBE95EC3132F6E4C0036208A /* ABO@72.png */; };
 		EBF118EB143F746400EED7DB /* CacheDownloadController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBF118EA143F746400EED7DB /* CacheDownloadController.m */; };
+		EBF1FB06152E837D00857413 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EBF1FB08152E837D00857413 /* Localizable.strings */; };
 		EBF9B31F1338EB0E00AE5A17 /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EBF9B31E1338EB0E00AE5A17 /* CustomCell.m */; };
 		EBF9B3211338EB5900AE5A17 /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBF9B3201338EB5900AE5A17 /* CustomCell.xib */; };
 /* End PBXBuildFile section */
@@ -44,15 +47,17 @@
 		1D6058910D05DD3D006BFB54 /* Reader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		28042007108E984D000629CD /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
-		28042008108E984D000629CD /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		28042009108E984D000629CD /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		2804200A108E984D000629CD /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
-		2804203B108E9BAB000629CD /* DetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailView.xib; sourceTree = "<group>"; };
+		2804203B108E9BAB000629CD /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 		2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		28A0AAE50D9B0CCF005BE974 /* Reader_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reader_Prefix.pch; sourceTree = "<group>"; };
 		28AD735F0D9D9599002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		8D1107310486CEB800E47090 /* Reader-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Reader-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		EB2D94C0152FBE74000FBDAD /* PropagandaViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PropagandaViewController_iPhone.xib; sourceTree = "<group>"; };
+		EB2E36A5152E8A50007E9CD9 /* Reader-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Reader-Info.plist"; sourceTree = "<group>"; };
+		EB527C08152E46590004AA73 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		EB527C0B152E503C0004AA73 /* DetailViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController_iPhone.xib; sourceTree = "<group>"; };
 		EB5729C21426F2B4004F4BEA /* Protocolos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Protocolos.h; path = "../../../../Documents/Objective-C/Reader/Classes/Protocolos.h"; sourceTree = "<group>"; };
 		EB5729C31426F2B4004F4BEA /* Constantes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Constantes.h; path = "../../../../Documents/Objective-C/Reader/Classes/Constantes.h"; sourceTree = "<group>"; };
 		EB5729C41426F2B4004F4BEA /* DownloadController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DownloadController.h; path = "../../../../Documents/Objective-C/Reader/Classes/DownloadController.h"; sourceTree = "<group>"; };
@@ -66,20 +71,20 @@
 		EB73E5CE145F16AA001C6C29 /* Xperio.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Xperio.jpg; sourceTree = "<group>"; };
 		EB7EC3FF13395CB4000E9812 /* button blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button blue.png"; sourceTree = "<group>"; };
 		EB7EC40013395CB4000E9812 /* icon blue add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon blue add.png"; sourceTree = "<group>"; };
-		EBA79C8713406EC6000B17BD /* PDFScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFScrollView.h; sourceTree = "<group>"; };
-		EBA79C8813406EC6000B17BD /* PDFScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFScrollView.m; sourceTree = "<group>"; };
-		EBA79C8913406EC6000B17BD /* TiledPDFView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TiledPDFView.h; sourceTree = "<group>"; };
-		EBA79C8A13406EC6000B17BD /* TiledPDFView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TiledPDFView.m; sourceTree = "<group>"; };
 		EBA79C9913406F5E000B17BD /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		EBAF789C142A65A100297DE0 /* ImageDownloadController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageDownloadController.h; sourceTree = "<group>"; };
 		EBAF789D142A65A100297DE0 /* ImageDownloadController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageDownloadController.m; sourceTree = "<group>"; };
-		EBB4BF981440993B00CC0F70 /* BannerDownloadController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BannerDownloadController.h; sourceTree = "<group>"; };
-		EBB4BF991440993B00CC0F70 /* BannerDownloadController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BannerDownloadController.m; sourceTree = "<group>"; };
+		EBB4BF981440993B00CC0F70 /* BannerDownloadController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BannerDownloadController.h; path = Classes/BannerDownloadController.h; sourceTree = "<group>"; };
+		EBB4BF991440993B00CC0F70 /* BannerDownloadController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BannerDownloadController.m; path = Classes/BannerDownloadController.m; sourceTree = "<group>"; };
+		EBC55854152E3039003CF60E /* MainWindow_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow_iPhone.xib; sourceTree = "<group>"; };
+		EBC5585A152E335A003CF60E /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
 		EBE208DC133A8C3C0016F51A /* button red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button red.png"; sourceTree = "<group>"; };
 		EBE208DD133A8C3C0016F51A /* icon red remove.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon red remove.png"; sourceTree = "<group>"; };
 		EBE95EC3132F6E4C0036208A /* ABO@72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ABO@72.png"; sourceTree = "<group>"; };
 		EBF118E9143F746400EED7DB /* CacheDownloadController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CacheDownloadController.h; sourceTree = "<group>"; };
 		EBF118EA143F746400EED7DB /* CacheDownloadController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CacheDownloadController.m; sourceTree = "<group>"; };
+		EBF1FB07152E837D00857413 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		EBF1FB09152E838400857413 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/Localizable.strings; sourceTree = "<group>"; };
 		EBF9B31D1338EB0E00AE5A17 /* CustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCell.h; sourceTree = "<group>"; };
 		EBF9B31E1338EB0E00AE5A17 /* CustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCell.m; sourceTree = "<group>"; };
 		EBF9B3201338EB5900AE5A17 /* CustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = CustomCell.xib; path = Classes/CustomCell.xib; sourceTree = "<group>"; };
@@ -103,22 +108,19 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				EBB4BF9B1440D9E400CC0F70 /* SDK */,
 				EB5729C21426F2B4004F4BEA /* Protocolos.h */,
 				EB5729C31426F2B4004F4BEA /* Constantes.h */,
 				EB5729C61426F2B4004F4BEA /* SynthesizeSingleton.h */,
-				EBF9B31D1338EB0E00AE5A17 /* CustomCell.h */,
-				EBF9B31E1338EB0E00AE5A17 /* CustomCell.m */,
 				1D3623240D0F684500981E51 /* ReaderAppDelegate.h */,
 				1D3623250D0F684500981E51 /* ReaderAppDelegate.m */,
 				28042007108E984D000629CD /* RootViewController.h */,
-				28042008108E984D000629CD /* RootViewController.m */,
+				EB527C08152E46590004AA73 /* RootViewController.m */,
 				28042009108E984D000629CD /* DetailViewController.h */,
 				2804200A108E984D000629CD /* DetailViewController.m */,
+				EBF9B31D1338EB0E00AE5A17 /* CustomCell.h */,
+				EBF9B31E1338EB0E00AE5A17 /* CustomCell.m */,
 				EB73E548145CE808001C6C29 /* PropagandaViewController.h */,
 				EB73E549145CE808001C6C29 /* PropagandaViewController.m */,
-				EBB4BF981440993B00CC0F70 /* BannerDownloadController.h */,
-				EBB4BF991440993B00CC0F70 /* BannerDownloadController.m */,
 				EB5729C41426F2B4004F4BEA /* DownloadController.h */,
 				EB5729C51426F2B4004F4BEA /* DownloadController.m */,
 				EBF118E9143F746400EED7DB /* CacheDownloadController.h */,
@@ -142,6 +144,7 @@
 			children = (
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
+				EB2D94C2152FC211000FBDAD /* Old Classes */,
 				29B97315FDCFA39411CA2CEA /* Support */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
@@ -152,7 +155,7 @@
 		29B97315FDCFA39411CA2CEA /* Support */ = {
 			isa = PBXGroup;
 			children = (
-				8D1107310486CEB800E47090 /* Reader-Info.plist */,
+				EB2E36A5152E8A50007E9CD9 /* Reader-Info.plist */,
 				28A0AAE50D9B0CCF005BE974 /* Reader_Prefix.pch */,
 				29B97316FDCFA39411CA2CEA /* main.m */,
 			);
@@ -162,10 +165,15 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				EBF1FB08152E837D00857413 /* Localizable.strings */,
 				28AD735F0D9D9599002E5188 /* MainWindow.xib */,
-				2804203B108E9BAB000629CD /* DetailView.xib */,
+				EBC55854152E3039003CF60E /* MainWindow_iPhone.xib */,
+				EBC5585A152E335A003CF60E /* RootViewController.xib */,
+				2804203B108E9BAB000629CD /* DetailViewController.xib */,
+				EB527C0B152E503C0004AA73 /* DetailViewController_iPhone.xib */,
 				EBF9B3201338EB5900AE5A17 /* CustomCell.xib */,
 				EB73E54A145CE808001C6C29 /* PropagandaViewController.xib */,
+				EB2D94C0152FBE74000FBDAD /* PropagandaViewController_iPhone.xib */,
 				EBE95EC3132F6E4C0036208A /* ABO@72.png */,
 				EB7EC3FF13395CB4000E9812 /* button blue.png */,
 				EBE208DC133A8C3C0016F51A /* button red.png */,
@@ -189,15 +197,13 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		EBB4BF9B1440D9E400CC0F70 /* SDK */ = {
+		EB2D94C2152FC211000FBDAD /* Old Classes */ = {
 			isa = PBXGroup;
 			children = (
-				EBA79C8713406EC6000B17BD /* PDFScrollView.h */,
-				EBA79C8813406EC6000B17BD /* PDFScrollView.m */,
-				EBA79C8913406EC6000B17BD /* TiledPDFView.h */,
-				EBA79C8A13406EC6000B17BD /* TiledPDFView.m */,
+				EBB4BF981440993B00CC0F70 /* BannerDownloadController.h */,
+				EBB4BF991440993B00CC0F70 /* BannerDownloadController.m */,
 			);
-			name = SDK;
+			name = "Old Classes";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,7 +232,7 @@
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0420;
+				LastUpgradeCheck = 0430;
 			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Reader" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -238,6 +244,8 @@
 				French,
 				German,
 				en,
+				pt,
+				es,
 			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
 			projectDirPath = "";
@@ -254,7 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				28AD73600D9D9599002E5188 /* MainWindow.xib in Resources */,
-				2804203C108E9BAB000629CD /* DetailView.xib in Resources */,
+				2804203C108E9BAB000629CD /* DetailViewController.xib in Resources */,
 				EBE95EC4132F6E4C0036208A /* ABO@72.png in Resources */,
 				EBF9B3211338EB5900AE5A17 /* CustomCell.xib in Resources */,
 				EB7EC40113395CB4000E9812 /* button blue.png in Resources */,
@@ -265,6 +273,11 @@
 				EB73E550145CE936001C6C29 /* Allergan.jpg in Resources */,
 				EB73E552145CE936001C6C29 /* Sistayne.jpg in Resources */,
 				EB73E5CF145F16AA001C6C29 /* Xperio.jpg in Resources */,
+				EBC55855152E3039003CF60E /* MainWindow_iPhone.xib in Resources */,
+				EBC5585B152E335A003CF60E /* RootViewController.xib in Resources */,
+				EB527C0C152E503C0004AA73 /* DetailViewController_iPhone.xib in Resources */,
+				EBF1FB06152E837D00857413 /* Localizable.strings in Resources */,
+				EB2D94C1152FBE74000FBDAD /* PropagandaViewController_iPhone.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,11 +290,9 @@
 			files = (
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* ReaderAppDelegate.m in Sources */,
-				2804200B108E984D000629CD /* RootViewController.m in Sources */,
+				EB527C07152E46590004AA73 /* RootViewController.m in Sources */,
 				2804200C108E984D000629CD /* DetailViewController.m in Sources */,
 				EBF9B31F1338EB0E00AE5A17 /* CustomCell.m in Sources */,
-				EBA79C8B13406EC6000B17BD /* PDFScrollView.m in Sources */,
-				EBA79C8C13406EC6000B17BD /* TiledPDFView.m in Sources */,
 				EB5729C71426F2B4004F4BEA /* DownloadController.m in Sources */,
 				EBAF789E142A65A100297DE0 /* ImageDownloadController.m in Sources */,
 				EBF118EB143F746400EED7DB /* CacheDownloadController.m in Sources */,
@@ -292,11 +303,25 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		EBF1FB08152E837D00857413 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EBF1FB07152E837D00857413 /* en */,
+				EBF1FB09152E838400857413 /* pt */,
+			);
+			name = Localizable.strings;
+			path = Classes;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		1D6058940D05DD3E006BFB54 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -305,10 +330,10 @@
 				GCC_PREFIX_HEADER = Reader_Prefix.pch;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "Reader-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = Reader;
 				PROVISIONING_PROFILE = "";
-				TARGETED_DEVICE_FAMILY = 2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -316,16 +341,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Reader_Prefix.pch;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "Reader-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = Reader;
 				PROVISIONING_PROFILE = "";
-				TARGETED_DEVICE_FAMILY = 2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -340,7 +366,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = 2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -355,7 +381,7 @@
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = 2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

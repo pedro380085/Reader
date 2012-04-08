@@ -32,23 +32,23 @@
     BOOL estadoSwipe;
     BOOL estadoDownload;
     
-	RootViewController *delegate;
+	RootViewController *__weak delegate;
 }
 
-@property (nonatomic, retain) UIView *view;
-@property (nonatomic, retain) UILabel *titulo;
-@property (nonatomic, retain) UITextView *destaques;
-@property (nonatomic, retain) UIImageView *imagem;
-@property (nonatomic, retain) UIProgressView *porcentagemBarra;
-@property (nonatomic, retain) UILabel *porcentagemTexto;
+@property (nonatomic) UIView *view;
+@property (nonatomic) UILabel *titulo;
+@property (nonatomic) UITextView *destaques;
+@property (nonatomic) UIImageView *imagem;
+@property (nonatomic) UIProgressView *porcentagemBarra;
+@property (nonatomic) UILabel *porcentagemTexto;
 
-@property (nonatomic, retain) NSMutableDictionary *info;
-@property (nonatomic, retain) NSIndexPath *indexPath;
+@property (nonatomic) NSMutableDictionary *info;
+@property (nonatomic) NSIndexPath *indexPath;
 @property (assign) NSInteger tipo;
 @property (assign) BOOL estadoSwipe;
 @property (assign) BOOL estadoDownload;
 
-@property (assign) RootViewController *delegate;
+@property (weak) RootViewController *delegate;
 
 - (void) swipeDireita;
 - (void) swipeEsquerda;

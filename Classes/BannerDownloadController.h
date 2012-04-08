@@ -17,11 +17,11 @@
     NSInteger numAparicoes;
     NSInteger numMaxAparicoes;
     
-    DetailViewController *delegate;
+    DetailViewController *__weak delegate;
 }
 
-@property (retain) NSMutableArray *cache;
-@property (assign) DetailViewController *delegate;
+@property  NSMutableArray *cache;
+@property (weak) DetailViewController *delegate;
 
 + (BannerDownloadController *) sharedBannerDownloadController;
 

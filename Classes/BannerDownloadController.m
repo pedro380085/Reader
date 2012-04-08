@@ -27,11 +27,6 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(BannerDownloadController);
     return self;
 }
 
-- (void)dealloc {
-    [cache release];
-    
-    [super dealloc];
-}
 
 #pragma mark -
 #pragma mark User Methods

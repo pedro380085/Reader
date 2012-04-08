@@ -21,18 +21,11 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(ImageDownloadController);
 #pragma mark Memory management
 
 - (id) init {
-    fila = [[NSMutableArray arrayWithCapacity:1] retain];  
+    fila = [NSMutableArray arrayWithCapacity:1];  
     
     return self;
 }
 
-- (void) dealloc {
-    [fila release];
-    [dadosRecebidos release];
-    
-    [super dealloc];
-    
-}
 
 #pragma mark -
 #pragma mark User Methods
@@ -57,7 +50,6 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(ImageDownloadController);
     
     [fila addObject:dic];
     
-    [dic release];
     
     return YES;
 }
@@ -95,7 +87,7 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(ImageDownloadController);
 		NSURLConnection * theConnection = [[NSURLConnection alloc] initWithRequest:theRequest delegate:self];
         
 		if (theConnection) {
-			dadosRecebidos = [[NSMutableData data] retain];		
+			dadosRecebidos = [NSMutableData data];		
         }
 		
 	} else {
@@ -121,8 +113,6 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(ImageDownloadController);
 - (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error
 {    
     // Libera os objetos
-    [connection release];
-    [dadosRecebidos release];
     
     // Inicia o próximo download, no caso, ele mesmo
     [self iniciarDownload];
@@ -136,8 +126,6 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(ImageDownloadController);
 	[dadosRecebidos writeToFile:caminho atomically:YES];
 	
     // Libera os objetos
-    [connection release];
-    [dadosRecebidos release];
         
     // Remove o download completado da fila
     [fila removeLastObject];
