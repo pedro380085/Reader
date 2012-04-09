@@ -22,7 +22,14 @@
 
 - (void) viewDidLoad {
     cacheButton.title = NSLocalizedString(@"Atualizar dados", nil);
-    pdfOutroApp.title = NSLocalizedString(@"Ler com outro app", nil);
+    actionButton.title = NSLocalizedString(@"Ler com outro app", nil);
+    
+    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
+        actionButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:self action:@selector(mostrarActionSheet:)];
+        self.navigationItem.rightBarButtonItem = actionButton;
+        
+        [webView loadRequest:[NSURLRequest requestWithURL:_urlAtual]];
+    }
 }
 
 - (void)viewDidUnload {
@@ -68,15 +75,15 @@
         [self.popoverController dismissPopoverAnimated:YES];
     }  
     
-    self.urlAtual = [NSURL fileURLWithPath:arquivo];
+    _urlAtual = [NSURL fileURLWithPath:arquivo];
     [webView loadRequest:[NSURLRequest requestWithURL:_urlAtual]];
 }
 
 - (IBAction)lerPdfEmOutroApp {
     if (_urlAtual != nil) {
-        UIDocumentInteractionController *docController = [UIDocumentInteractionController interactionControllerWithURL:_urlAtual];
+        docController = [UIDocumentInteractionController interactionControllerWithURL:_urlAtual];
         docController.delegate = self;
-        [docController presentOpenInMenuFromBarButtonItem:pdfOutroApp animated:YES];
+        [docController presentOpenInMenuFromBarButtonItem:actionButton animated:YES];
     } else {
         [self infoLerPdfEmOutroApp];
     }
@@ -96,7 +103,7 @@
 - (IBAction)mostrarActionSheet:(id)sender {
     // Mostra popover para o botão
 
-    UIActionSheet *action = [[UIActionSheet alloc] initWithTitle:NSLocalizedString(@"Ações", nil) delegate:self cancelButtonTitle:NSLocalizedString(@"Cancelar", nil) destructiveButtonTitle:@"" otherButtonTitles: nil];
+    UIActionSheet *action = [[UIActionSheet alloc] initWithTitle:NSLocalizedString(@"Ações", nil) delegate:self cancelButtonTitle:NSLocalizedString(@"Cancelar", nil) destructiveButtonTitle:nil otherButtonTitles: NSLocalizedString(@"Ler com outro app", nil), nil];
     [action showFromBarButtonItem:actionButton animated:YES];
 }
 
@@ -133,7 +140,8 @@
 
 - (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex {
     if (buttonIndex == 0) {
-        [self lerPdfEmOutroApp];
+        [self performSelector:@selector(lerPdfEmOutroApp) withObject:self afterDelay:2.0];
+        //[self lerPdfEmOutroApp];
     }
 }
 

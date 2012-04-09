@@ -25,14 +25,17 @@
 
 - (id)init {
 	// Criando e configura um objeto para detectar swipes na célula
-	UISwipeGestureRecognizer * recognizer;
+	UISwipeGestureRecognizer *__strong recognizerDireita, *__strong recognizerEsquerda;
 	
-    recognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeDireita)];
-	[self addGestureRecognizer:recognizer];
+    recognizerDireita = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeDireita)];
+    recognizerDireita.delegate = self;
+    recognizerDireita.direction = UISwipeGestureRecognizerDirectionRight;
+	[self addGestureRecognizer:recognizerDireita];
 	
-	recognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeEsquerda)];
-	recognizer.direction = UISwipeGestureRecognizerDirectionLeft;
-	[self addGestureRecognizer:recognizer];
+	recognizerEsquerda = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeEsquerda)];
+    recognizerEsquerda.delegate = self;
+	recognizerEsquerda.direction = UISwipeGestureRecognizerDirectionLeft;
+	[self addGestureRecognizer:recognizerEsquerda];
 	
 	// Variável interna
 	self.estadoSwipe = NO;
@@ -163,6 +166,15 @@
 - (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch {
     return YES;
 }
+
+- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer {
+    return YES;
+}
+
+- (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer {
+    return YES;
+}
+
 
 
 @end

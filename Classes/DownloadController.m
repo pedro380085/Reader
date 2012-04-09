@@ -251,15 +251,20 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(DownloadController);
 
 - (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error
 {
-    // Libera os objetos
-    
     // Atualiza interface
     CustomCell * celula = (CustomCell *)[delegate.tableView cellForRowAtIndexPath:[[fila lastObject] objectForKey:DOWNLOAD_PATH]];
     celula.porcentagemTexto.text = NSLocalizedString(@"Download falhou!", nil);
     [self performSelector:@selector(restaurarInterface) withObject:nil afterDelay:0.4];
+    [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
     
-    // Atualiza a flag pois o download falhou
+    // Remove o download falho da fila
+    [fila removeLastObject];
+    
+    // Atualiza a flag pois o download terminou sem sucesso
 	baixando = NO;
+    
+    // Informa a célula que o download terminou sem sucesso
+    celula.estadoDownload = NO;
     
     // Inicia o próximo download
     [self iniciarDownload];
@@ -272,8 +277,6 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(DownloadController);
     NSString * caminho = [[NSHomeDirectory() stringByAppendingPathComponent:  @"Documents"]
                           stringByAppendingPathComponent:[[fila lastObject] objectForKey:DOWNLOAD_ARQUIVO]];
 	[dadosRecebidos writeToFile:caminho atomically:YES];
-	
-    // Libera os objetos
     
     // Atualiza interface
     CustomCell * celula = (CustomCell *)[delegate.tableView cellForRowAtIndexPath:[[fila lastObject] objectForKey:DOWNLOAD_PATH]];

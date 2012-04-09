@@ -20,10 +20,11 @@
     
     IBOutlet UIToolbar * toolbar;
 	IBOutlet UIBarButtonItem * cacheButton;
-    IBOutlet UIBarButtonItem * pdfOutroApp;
     IBOutlet UIBarButtonItem * actionButton;
     IBOutlet UIImageView * banner;
 	IBOutlet UIWebView * webView;
+    
+    UIDocumentInteractionController *__strong docController;
 }
 
 @property (nonatomic) UIPopoverController *popoverController;

@@ -29,6 +29,9 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    // TO-DO
+    self.view.frame = CGRectMake(0, 20.0, self.view.frame.size.width, self.view.frame.size.height);    
 }
 
 - (void)viewDidUnload
@@ -41,20 +44,6 @@
 - (void)viewWillAppear:(BOOL)animated {
     int aleatorio = arc4random() % [nomesBanners count];
     [banner setImage:[UIImage imageNamed:[nomesBanners objectAtIndex:aleatorio]]];
-    
-    [self.view setNeedsDisplay];
-}
-
-
-- (void)orientar {
-    //UIInterfaceOrientation u = self.interfaceOrientation;
-    if (!UIInterfaceOrientationIsLandscape([delegate interfaceOrientation])) {
-        self.view.transform = CGAffineTransformMakeRotation(-M_PI_2);
-    } else {
-        self.view.transform = CGAffineTransformIdentity;
-    }
-    
-    [self.view setFrame:CGRectMake(0.0, 0.0, self.view.frame.size.width, self.view.frame.size.height)];
 }
 
 #pragma mark -

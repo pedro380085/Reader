@@ -112,7 +112,8 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(ImageDownloadController);
 
 - (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error
 {    
-    // Libera os objetos
+    // Remove o download falho da fila
+    [fila removeLastObject];
     
     // Inicia o próximo download, no caso, ele mesmo
     [self iniciarDownload];

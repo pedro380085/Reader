@@ -25,7 +25,6 @@
 @property (nonatomic, weak) NSTimer *timer;
 @property (weak) id <PropagandaViewControllerDelegate> delegate;
 
-- (void)orientar;
 - (void)atualizarBanner;
 - (void)iniciarTimer;
 - (void)invalidarTimer;

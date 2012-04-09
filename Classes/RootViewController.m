@@ -29,11 +29,9 @@
     
     self.navigationItem.title = NSLocalizedString(@"Edições", nil);
 	
-    // Definindo os delegates e atualizando cache
+    // Definindo os delegates
 	[CacheDownloadController sharedCacheDownloadController].delegate = self;
 	[DownloadController sharedDownloadController].delegate = self;
-    
-    [[CacheDownloadController sharedCacheDownloadController] atualizarCache];
     
     // Estado inicial da tabela
     tabelaModoEdicao = NO;
@@ -44,11 +42,22 @@
     // For example: self.myOutlet = nil;
 }
 
+- (void)viewDidAppear:(BOOL)animated {
+    // Atualizando o cache
+    [[CacheDownloadController sharedCacheDownloadController] atualizarCache];
+}
+
 #pragma mark -
 #pragma mark Rotation support
 
 // Ensure that the view controller supports rotation and that the split view can therefore show in both portrait and landscape.
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
+    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
+        if (UIInterfaceOrientationIsLandscape(interfaceOrientation)) {
+            return NO;
+        }
+    }
+    
     return YES;
 }
 
@@ -202,6 +211,7 @@
     celula.porcentagemBarra.hidden = YES;
     celula.porcentagemTexto.hidden = YES;
     celula.estadoDownload = NO;
+    //celula.contentMode = UIViewContentModeRedraw;
     
     [[DownloadController sharedDownloadController] atualizarInterfaceParaTabelaComCelula:celula paraPath:indexPath];
     
@@ -209,8 +219,6 @@
     //cell.frame = CGRectMake(cell.frame.origin.x, cell.frame.origin.y, cell.frame.size.width, cell.frame.size.height*2);
     //cell.view.frame = CGRectMake(cell.view.frame.origin.x, cell.view.frame.origin.y, cell.view.frame.size.width, cell.view.frame.size.height*2);
     //cell.destaques.frame = CGRectMake(cell.destaques.frame.origin.x, cell.destaques.frame.origin.y, cell.destaques.frame.size.width, cell.destaques.frame.size.height*2);
-    
-    celula.contentMode = UIViewContentModeRedraw;
 	
 	return celula;
 }
