@@ -32,8 +32,9 @@
 
 + (CacheDownloadController *) sharedCacheDownloadController;
 
-- (void) definirTipoCache: (NSString *)tipo;
-- (void) atualizarCache;
-- (void) verificarCache;
+- (void)definirTipoCache:(NSString *)tipo;
+- (void)atualizarCache;
+- (void)verificarCache;
+- (void)carregarCache;
 
 @end

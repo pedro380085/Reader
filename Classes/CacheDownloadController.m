@@ -56,7 +56,7 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(CacheDownloadController);
  
  */
 
-- (void) atualizarCache {
+- (void)atualizarCache {
     
     // Checa se existe algum download sendo efetuado no momento ou se o dicionário não foi inicializado corretamente
     if (baixando == YES || [cacheInfo count] != 4) {
@@ -75,11 +75,13 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(CacheDownloadController);
         // Atualiza a flag informando que algum download está sendo efetuado
         baixando = YES;
         dadosRecebidos = [NSMutableData data];
+    } else {
+        [self performSelector:@selector(carregarCache) withObject:nil afterDelay:ANIMACAO_PADRAO];
     }
     
 }
 
-- (void) verificarCache {
+- (void)verificarCache {
     
     NSString * caminho = [[NSHomeDirectory() stringByAppendingPathComponent:  @"Documents"]
                           stringByAppendingPathComponent:[cacheInfo objectForKey:DOWNLOAD_ARQUIVO]];
@@ -153,6 +155,10 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(CacheDownloadController);
     delegate.detailViewController.cacheButton.title = NSLocalizedString(@"Atualizar dados", nil);
 }
 
+- (void)carregarCache {
+    [delegate carregarCache];
+}
+
 
 #pragma mark -
 #pragma mark Connection Support
@@ -179,6 +185,7 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(CacheDownloadController);
     // Atualiza interface
     delegate.detailViewController.cacheButton.title = NSLocalizedString(@"Atualização falhou!", nil);
     [self performSelector:@selector(restaurarInterface) withObject:nil afterDelay:1.0];
+    [self performSelector:@selector(carregarCache) withObject:nil afterDelay:ANIMACAO_PADRAO];
     
     // Atualiza a flag pois o download falhou
 	baixando = NO;
